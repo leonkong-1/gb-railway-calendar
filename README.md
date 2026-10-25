@@ -103,7 +103,7 @@ Planancy's key labels the yellow dates as the "NR Period End Date". They all fal
 
 ### Step 4: JavaScript parity
 
-The website runs a JavaScript port of the engine, [`site/railcal.js`](site/railcal.js). The data files are generated from the Python engine. The parity check compares the two for every year file, every timetable file, every day from 1 April 1996 to 31 March 2059, and a set of query-parser cases.
+The website runs a JavaScript port of the engine, [`docs/railcal.js`](docs/railcal.js). The data files are generated from the Python engine. The parity check compares the two for every year file, every timetable file, every day from 1 April 1996 to 31 March 2059, and a set of query-parser cases.
 
 ### Coverage by source
 
@@ -179,10 +179,10 @@ railcal.timetable_of(date(2026, 10, 25))        # (2026, 'Subsidiary', 'H')
 
 ### JavaScript
 
-[`site/railcal.js`](site/railcal.js) works in the browser (`window.RailCal`) and in Node (`require`).
+[`docs/railcal.js`](docs/railcal.js) works in the browser (`window.RailCal`) and in Node (`require`).
 
 ```js
-const R = require("./site/railcal.js");
+const R = require("./docs/railcal.js");
 R.describe(R.ymd(2026, 10, 25));   // everything about one date
 R.lookup("P8W3 2026/27");          // free-text query: periods, weeks, dates, timetables
 R.yearJSON(2026);                  // a whole financial year
@@ -192,7 +192,7 @@ R.yearJSON(2026);                  // a whole financial year
 
 ### JSON data
 
-[`site/data/`](site/data/) holds one file per financial year and one per timetable year, listed in [`site/data/index.json`](site/data/index.json). All dates are ISO 8601 and all ranges are inclusive.
+[`docs/data/`](docs/data/) holds one file per financial year and one per timetable year, listed in [`docs/data/index.json`](docs/data/index.json). All dates are ISO 8601 and all ranges are inclusive.
 
 ```json
 {
@@ -213,7 +213,7 @@ R.yearJSON(2026);                  // a whole financial year
 
 ### Website
 
-[`site/`](site/) is a self-contained static site with no build step and no server-side code. It has three views:
+[`docs/`](docs/) is a self-contained static site with no build step and no server-side code. It has three views:
 
 - **Today**: the current railway period, possession week, and timetable block, using UK time.
 - **Look up**: the date range for any period, week, date, or timetable, with a JSON view of every answer.
@@ -222,16 +222,16 @@ R.yearJSON(2026);                  // a whole financial year
 To run it locally:
 
 ```bash
-python -m http.server 8000 --directory site
+python -m http.server 8000 --directory docs
 ```
 
-It can be hosted as-is on any static host, for example GitHub Pages.
+It can be hosted as-is on any static host. For GitHub Pages: **Settings → Pages → Build and deployment → Deploy from a branch**, then choose `main` and `/docs`. The `.nojekyll` file stops Pages running Jekyll over it.
 
 ## Repository layout
 
 ```
 railcal.py                 Reference implementation of the algorithm
-gen_json.py                Writes site/data/*.json from railcal.py
+gen_json.py                Writes docs/data/*.json from railcal.py
 run_tests.py               Runs every check and writes test-results/
 tests/
   check_railwaycalendar.py   vs railwaycalendar.com (needs local snapshot)
@@ -241,7 +241,7 @@ tests/
   fixtures/
     orr_railway_period_dates.csv   ORR data, Open Government Licence v3.0
 test-results/              Output of the latest run
-site/
+docs/
   index.html               The website
   railcal.js               JavaScript port of the engine
   data/                    Generated JSON, 1995/96 to 2059/60

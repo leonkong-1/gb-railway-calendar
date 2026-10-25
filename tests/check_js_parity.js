@@ -1,9 +1,9 @@
-// Check the JS engine (site/railcal.js) against the Python-generated data files (node tests/check_js_parity.js).
+// Check the JS engine (docs/railcal.js) against the Python-generated data files (node tests/check_js_parity.js).
 const fs = require("fs");
 const path = require("path");
-const R = require("../site/railcal.js");
+const R = require("../docs/railcal.js");
 
-const dir = path.join(__dirname, "..", "site", "data");
+const dir = path.join(__dirname, "..", "docs", "data");
 const index = JSON.parse(fs.readFileSync(path.join(dir, "index.json"), "utf8"));
 let checks = 0, fails = 0;
 const same = (label, a, b) => {

@@ -1,11 +1,11 @@
-"""Write the machine-readable calendar files for the site: site/data/<yyyy-yy>.json, timetable-<yyyy>.json, index.json."""
+"""Write the machine-readable calendar files for the site: docs/data/<yyyy-yy>.json, timetable-<yyyy>.json, index.json."""
 import json
 import os
 
 import railcal
 
 FIRST_FY, LAST_FY = 1995, 2059
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "site", "data")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data")
 
 
 def fy_label(fy):
