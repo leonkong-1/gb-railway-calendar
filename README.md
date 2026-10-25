@@ -21,6 +21,7 @@ The algorithm was **entirely reverse engineered** from published outputs. It was
 - [Repository layout](#repository-layout)
 - [Limitations](#limitations)
 - [Credits and sources](#credits-and-sources)
+- [Licence](#licence)
 
 ## The three calendars
 
@@ -238,7 +239,7 @@ tests/
   check_planancy.py          vs Planancy 2026-2030 calendar (transcribed values inline)
   check_js_parity.js         JavaScript engine vs Python data files
   fixtures/
-    orr_railway_period_dates.csv
+    orr_railway_period_dates.csv   ORR data, Open Government Licence v3.0
 test-results/              Output of the latest run
 site/
   index.html               The website
@@ -258,3 +259,9 @@ site/
 - **[railwaycalendar.com](https://railwaycalendar.com)**, created and maintained by Rizwan Khan. Its published year tables were the basis for reverse engineering the algorithm. It is independent and not affiliated with Network Rail, and neither is this repository.
 - **Office of Rail and Road**, "Railway period dates, Great Britain, April 1995 to March 2029", first published 25 July 2023. Contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Extracted to `tests/fixtures/orr_railway_period_dates.csv`.
 - **[Planancy](https://www.planancy.co.uk)**, "2026 - 2030 Rail Weeks Calendar". Values transcribed for testing only; the PDF is not redistributed.
+
+## Licence
+
+The code, generated data, website, and test results are released under the [MIT licence](LICENSE).
+
+The exception is [`tests/fixtures/orr_railway_period_dates.csv`](tests/fixtures/orr_railway_period_dates.csv), which is ORR data and remains under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). See [`tests/fixtures/README.md`](tests/fixtures/README.md).
