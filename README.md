@@ -88,7 +88,7 @@ The approach was:
 
 ### Step 2: independent cross-check against ORR
 
-The Office of Rail and Road publishes railway period dates (`railway-period-dates.ods`) for every period from April 1995 to March 2029 (442 periods). The algorithm was not fitted to this data. The comparison is particularly strong for 1995/96 to 2003/04, which is earlier than anything on railwaycalendar.com and so is a genuinely out-of-sample test of the anchor rules.
+The Office of Rail and Road publishes [railway period dates](https://dataportal.orr.gov.uk/media/2250/railway-period-dates.ods) for every period from April 1995 to March 2029 (442 periods). The algorithm was not fitted to this data. The comparison is particularly strong for 1995/96 to 2003/04, which is earlier than anything on railwaycalendar.com and so is a genuinely out-of-sample test of the anchor rules.
 
 **Result: all 442 periods match exactly, and the control period labels match for all 34 years.**
 
@@ -259,7 +259,7 @@ docs/
 ## Credits and sources
 
 - **[railwaycalendar.com](https://railwaycalendar.com)**, created and maintained by Rizwan Khan. Its published year tables were the basis for reverse engineering the algorithm. It is independent and not affiliated with Network Rail, and neither is this repository.
-- **Office of Rail and Road**, "Railway period dates, Great Britain, April 1995 to March 2029", first published 25 July 2023. Contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Extracted to `tests/fixtures/orr_railway_period_dates.csv`.
+- **Office of Rail and Road**, ["Railway period dates, Great Britain, April 1995 to March 2029"](https://dataportal.orr.gov.uk/media/2250/railway-period-dates.ods), first published 25 July 2023. Contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Extracted to `tests/fixtures/orr_railway_period_dates.csv`.
 - **[Planancy](https://www.planancy.co.uk)**, "2026 - 2030 Rail Weeks Calendar". Values transcribed for testing only; the PDF is not redistributed.
 
 ## Licence
