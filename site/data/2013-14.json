@@ -1,0 +1,721 @@
+{
+ "financial_year": "2013/14",
+ "start": "2013-04-01",
+ "end": "2014-03-31",
+ "control_period": "CP4",
+ "control_period_year": 5,
+ "railway_periods": [
+  {
+   "year": "2013/14",
+   "period": 1,
+   "label": "2013/14 P01",
+   "start": "2013-04-01",
+   "end": "2013-04-27",
+   "days": 27
+  },
+  {
+   "year": "2013/14",
+   "period": 2,
+   "label": "2013/14 P02",
+   "start": "2013-04-28",
+   "end": "2013-05-25",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 3,
+   "label": "2013/14 P03",
+   "start": "2013-05-26",
+   "end": "2013-06-22",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 4,
+   "label": "2013/14 P04",
+   "start": "2013-06-23",
+   "end": "2013-07-20",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 5,
+   "label": "2013/14 P05",
+   "start": "2013-07-21",
+   "end": "2013-08-17",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 6,
+   "label": "2013/14 P06",
+   "start": "2013-08-18",
+   "end": "2013-09-14",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 7,
+   "label": "2013/14 P07",
+   "start": "2013-09-15",
+   "end": "2013-10-12",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 8,
+   "label": "2013/14 P08",
+   "start": "2013-10-13",
+   "end": "2013-11-09",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 9,
+   "label": "2013/14 P09",
+   "start": "2013-11-10",
+   "end": "2013-12-07",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 10,
+   "label": "2013/14 P10",
+   "start": "2013-12-08",
+   "end": "2014-01-04",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 11,
+   "label": "2013/14 P11",
+   "start": "2014-01-05",
+   "end": "2014-02-01",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 12,
+   "label": "2013/14 P12",
+   "start": "2014-02-02",
+   "end": "2014-03-01",
+   "days": 28
+  },
+  {
+   "year": "2013/14",
+   "period": 13,
+   "label": "2013/14 P13",
+   "start": "2014-03-02",
+   "end": "2014-03-31",
+   "days": 30
+  }
+ ],
+ "possession_year": {
+  "year": "2013/14",
+  "start": "2013-03-30",
+  "end": "2014-03-28",
+  "weeks": 52,
+  "periods": [
+   {
+    "year": "2013/14",
+    "period": 1,
+    "label": "2013/14 P01",
+    "start": "2013-03-30",
+    "end": "2013-04-26",
+    "first_week": 1,
+    "last_week": 4,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 2,
+    "label": "2013/14 P02",
+    "start": "2013-04-27",
+    "end": "2013-05-24",
+    "first_week": 5,
+    "last_week": 8,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 3,
+    "label": "2013/14 P03",
+    "start": "2013-05-25",
+    "end": "2013-06-21",
+    "first_week": 9,
+    "last_week": 12,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 4,
+    "label": "2013/14 P04",
+    "start": "2013-06-22",
+    "end": "2013-07-19",
+    "first_week": 13,
+    "last_week": 16,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 5,
+    "label": "2013/14 P05",
+    "start": "2013-07-20",
+    "end": "2013-08-16",
+    "first_week": 17,
+    "last_week": 20,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 6,
+    "label": "2013/14 P06",
+    "start": "2013-08-17",
+    "end": "2013-09-13",
+    "first_week": 21,
+    "last_week": 24,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 7,
+    "label": "2013/14 P07",
+    "start": "2013-09-14",
+    "end": "2013-10-11",
+    "first_week": 25,
+    "last_week": 28,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 8,
+    "label": "2013/14 P08",
+    "start": "2013-10-12",
+    "end": "2013-11-08",
+    "first_week": 29,
+    "last_week": 32,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 9,
+    "label": "2013/14 P09",
+    "start": "2013-11-09",
+    "end": "2013-12-06",
+    "first_week": 33,
+    "last_week": 36,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 10,
+    "label": "2013/14 P10",
+    "start": "2013-12-07",
+    "end": "2014-01-03",
+    "first_week": 37,
+    "last_week": 40,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 11,
+    "label": "2013/14 P11",
+    "start": "2014-01-04",
+    "end": "2014-01-31",
+    "first_week": 41,
+    "last_week": 44,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 12,
+    "label": "2013/14 P12",
+    "start": "2014-02-01",
+    "end": "2014-02-28",
+    "first_week": 45,
+    "last_week": 48,
+    "weeks": 4
+   },
+   {
+    "year": "2013/14",
+    "period": 13,
+    "label": "2013/14 P13",
+    "start": "2014-03-01",
+    "end": "2014-03-28",
+    "first_week": 49,
+    "last_week": 52,
+    "weeks": 4
+   }
+  ],
+  "weeks_list": [
+   {
+    "year": "2013/14",
+    "week": 1,
+    "period": 1,
+    "week_in_period": 1,
+    "start": "2013-03-30",
+    "end": "2013-04-05",
+    "label": "2013/14 W01 (P01 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 2,
+    "period": 1,
+    "week_in_period": 2,
+    "start": "2013-04-06",
+    "end": "2013-04-12",
+    "label": "2013/14 W02 (P01 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 3,
+    "period": 1,
+    "week_in_period": 3,
+    "start": "2013-04-13",
+    "end": "2013-04-19",
+    "label": "2013/14 W03 (P01 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 4,
+    "period": 1,
+    "week_in_period": 4,
+    "start": "2013-04-20",
+    "end": "2013-04-26",
+    "label": "2013/14 W04 (P01 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 5,
+    "period": 2,
+    "week_in_period": 1,
+    "start": "2013-04-27",
+    "end": "2013-05-03",
+    "label": "2013/14 W05 (P02 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 6,
+    "period": 2,
+    "week_in_period": 2,
+    "start": "2013-05-04",
+    "end": "2013-05-10",
+    "label": "2013/14 W06 (P02 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 7,
+    "period": 2,
+    "week_in_period": 3,
+    "start": "2013-05-11",
+    "end": "2013-05-17",
+    "label": "2013/14 W07 (P02 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 8,
+    "period": 2,
+    "week_in_period": 4,
+    "start": "2013-05-18",
+    "end": "2013-05-24",
+    "label": "2013/14 W08 (P02 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 9,
+    "period": 3,
+    "week_in_period": 1,
+    "start": "2013-05-25",
+    "end": "2013-05-31",
+    "label": "2013/14 W09 (P03 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 10,
+    "period": 3,
+    "week_in_period": 2,
+    "start": "2013-06-01",
+    "end": "2013-06-07",
+    "label": "2013/14 W10 (P03 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 11,
+    "period": 3,
+    "week_in_period": 3,
+    "start": "2013-06-08",
+    "end": "2013-06-14",
+    "label": "2013/14 W11 (P03 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 12,
+    "period": 3,
+    "week_in_period": 4,
+    "start": "2013-06-15",
+    "end": "2013-06-21",
+    "label": "2013/14 W12 (P03 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 13,
+    "period": 4,
+    "week_in_period": 1,
+    "start": "2013-06-22",
+    "end": "2013-06-28",
+    "label": "2013/14 W13 (P04 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 14,
+    "period": 4,
+    "week_in_period": 2,
+    "start": "2013-06-29",
+    "end": "2013-07-05",
+    "label": "2013/14 W14 (P04 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 15,
+    "period": 4,
+    "week_in_period": 3,
+    "start": "2013-07-06",
+    "end": "2013-07-12",
+    "label": "2013/14 W15 (P04 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 16,
+    "period": 4,
+    "week_in_period": 4,
+    "start": "2013-07-13",
+    "end": "2013-07-19",
+    "label": "2013/14 W16 (P04 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 17,
+    "period": 5,
+    "week_in_period": 1,
+    "start": "2013-07-20",
+    "end": "2013-07-26",
+    "label": "2013/14 W17 (P05 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 18,
+    "period": 5,
+    "week_in_period": 2,
+    "start": "2013-07-27",
+    "end": "2013-08-02",
+    "label": "2013/14 W18 (P05 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 19,
+    "period": 5,
+    "week_in_period": 3,
+    "start": "2013-08-03",
+    "end": "2013-08-09",
+    "label": "2013/14 W19 (P05 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 20,
+    "period": 5,
+    "week_in_period": 4,
+    "start": "2013-08-10",
+    "end": "2013-08-16",
+    "label": "2013/14 W20 (P05 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 21,
+    "period": 6,
+    "week_in_period": 1,
+    "start": "2013-08-17",
+    "end": "2013-08-23",
+    "label": "2013/14 W21 (P06 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 22,
+    "period": 6,
+    "week_in_period": 2,
+    "start": "2013-08-24",
+    "end": "2013-08-30",
+    "label": "2013/14 W22 (P06 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 23,
+    "period": 6,
+    "week_in_period": 3,
+    "start": "2013-08-31",
+    "end": "2013-09-06",
+    "label": "2013/14 W23 (P06 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 24,
+    "period": 6,
+    "week_in_period": 4,
+    "start": "2013-09-07",
+    "end": "2013-09-13",
+    "label": "2013/14 W24 (P06 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 25,
+    "period": 7,
+    "week_in_period": 1,
+    "start": "2013-09-14",
+    "end": "2013-09-20",
+    "label": "2013/14 W25 (P07 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 26,
+    "period": 7,
+    "week_in_period": 2,
+    "start": "2013-09-21",
+    "end": "2013-09-27",
+    "label": "2013/14 W26 (P07 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 27,
+    "period": 7,
+    "week_in_period": 3,
+    "start": "2013-09-28",
+    "end": "2013-10-04",
+    "label": "2013/14 W27 (P07 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 28,
+    "period": 7,
+    "week_in_period": 4,
+    "start": "2013-10-05",
+    "end": "2013-10-11",
+    "label": "2013/14 W28 (P07 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 29,
+    "period": 8,
+    "week_in_period": 1,
+    "start": "2013-10-12",
+    "end": "2013-10-18",
+    "label": "2013/14 W29 (P08 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 30,
+    "period": 8,
+    "week_in_period": 2,
+    "start": "2013-10-19",
+    "end": "2013-10-25",
+    "label": "2013/14 W30 (P08 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 31,
+    "period": 8,
+    "week_in_period": 3,
+    "start": "2013-10-26",
+    "end": "2013-11-01",
+    "label": "2013/14 W31 (P08 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 32,
+    "period": 8,
+    "week_in_period": 4,
+    "start": "2013-11-02",
+    "end": "2013-11-08",
+    "label": "2013/14 W32 (P08 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 33,
+    "period": 9,
+    "week_in_period": 1,
+    "start": "2013-11-09",
+    "end": "2013-11-15",
+    "label": "2013/14 W33 (P09 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 34,
+    "period": 9,
+    "week_in_period": 2,
+    "start": "2013-11-16",
+    "end": "2013-11-22",
+    "label": "2013/14 W34 (P09 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 35,
+    "period": 9,
+    "week_in_period": 3,
+    "start": "2013-11-23",
+    "end": "2013-11-29",
+    "label": "2013/14 W35 (P09 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 36,
+    "period": 9,
+    "week_in_period": 4,
+    "start": "2013-11-30",
+    "end": "2013-12-06",
+    "label": "2013/14 W36 (P09 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 37,
+    "period": 10,
+    "week_in_period": 1,
+    "start": "2013-12-07",
+    "end": "2013-12-13",
+    "label": "2013/14 W37 (P10 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 38,
+    "period": 10,
+    "week_in_period": 2,
+    "start": "2013-12-14",
+    "end": "2013-12-20",
+    "label": "2013/14 W38 (P10 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 39,
+    "period": 10,
+    "week_in_period": 3,
+    "start": "2013-12-21",
+    "end": "2013-12-27",
+    "label": "2013/14 W39 (P10 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 40,
+    "period": 10,
+    "week_in_period": 4,
+    "start": "2013-12-28",
+    "end": "2014-01-03",
+    "label": "2013/14 W40 (P10 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 41,
+    "period": 11,
+    "week_in_period": 1,
+    "start": "2014-01-04",
+    "end": "2014-01-10",
+    "label": "2013/14 W41 (P11 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 42,
+    "period": 11,
+    "week_in_period": 2,
+    "start": "2014-01-11",
+    "end": "2014-01-17",
+    "label": "2013/14 W42 (P11 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 43,
+    "period": 11,
+    "week_in_period": 3,
+    "start": "2014-01-18",
+    "end": "2014-01-24",
+    "label": "2013/14 W43 (P11 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 44,
+    "period": 11,
+    "week_in_period": 4,
+    "start": "2014-01-25",
+    "end": "2014-01-31",
+    "label": "2013/14 W44 (P11 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 45,
+    "period": 12,
+    "week_in_period": 1,
+    "start": "2014-02-01",
+    "end": "2014-02-07",
+    "label": "2013/14 W45 (P12 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 46,
+    "period": 12,
+    "week_in_period": 2,
+    "start": "2014-02-08",
+    "end": "2014-02-14",
+    "label": "2013/14 W46 (P12 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 47,
+    "period": 12,
+    "week_in_period": 3,
+    "start": "2014-02-15",
+    "end": "2014-02-21",
+    "label": "2013/14 W47 (P12 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 48,
+    "period": 12,
+    "week_in_period": 4,
+    "start": "2014-02-22",
+    "end": "2014-02-28",
+    "label": "2013/14 W48 (P12 wk 4)"
+   },
+   {
+    "year": "2013/14",
+    "week": 49,
+    "period": 13,
+    "week_in_period": 1,
+    "start": "2014-03-01",
+    "end": "2014-03-07",
+    "label": "2013/14 W49 (P13 wk 1)"
+   },
+   {
+    "year": "2013/14",
+    "week": 50,
+    "period": 13,
+    "week_in_period": 2,
+    "start": "2014-03-08",
+    "end": "2014-03-14",
+    "label": "2013/14 W50 (P13 wk 2)"
+   },
+   {
+    "year": "2013/14",
+    "week": 51,
+    "period": 13,
+    "week_in_period": 3,
+    "start": "2014-03-15",
+    "end": "2014-03-21",
+    "label": "2013/14 W51 (P13 wk 3)"
+   },
+   {
+    "year": "2013/14",
+    "week": 52,
+    "period": 13,
+    "week_in_period": 4,
+    "start": "2014-03-22",
+    "end": "2014-03-28",
+    "label": "2013/14 W52 (P13 wk 4)"
+   }
+  ]
+ }
+}

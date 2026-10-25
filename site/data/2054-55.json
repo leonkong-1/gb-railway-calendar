@@ -1,0 +1,721 @@
+{
+ "financial_year": "2054/55",
+ "start": "2054-04-01",
+ "end": "2055-03-31",
+ "control_period": "FP6",
+ "control_period_year": 1,
+ "railway_periods": [
+  {
+   "year": "2054/55",
+   "period": 1,
+   "label": "2054/55 P01",
+   "start": "2054-04-01",
+   "end": "2054-05-02",
+   "days": 32
+  },
+  {
+   "year": "2054/55",
+   "period": 2,
+   "label": "2054/55 P02",
+   "start": "2054-05-03",
+   "end": "2054-05-30",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 3,
+   "label": "2054/55 P03",
+   "start": "2054-05-31",
+   "end": "2054-06-27",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 4,
+   "label": "2054/55 P04",
+   "start": "2054-06-28",
+   "end": "2054-07-25",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 5,
+   "label": "2054/55 P05",
+   "start": "2054-07-26",
+   "end": "2054-08-22",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 6,
+   "label": "2054/55 P06",
+   "start": "2054-08-23",
+   "end": "2054-09-19",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 7,
+   "label": "2054/55 P07",
+   "start": "2054-09-20",
+   "end": "2054-10-17",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 8,
+   "label": "2054/55 P08",
+   "start": "2054-10-18",
+   "end": "2054-11-14",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 9,
+   "label": "2054/55 P09",
+   "start": "2054-11-15",
+   "end": "2054-12-12",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 10,
+   "label": "2054/55 P10",
+   "start": "2054-12-13",
+   "end": "2055-01-09",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 11,
+   "label": "2054/55 P11",
+   "start": "2055-01-10",
+   "end": "2055-02-06",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 12,
+   "label": "2054/55 P12",
+   "start": "2055-02-07",
+   "end": "2055-03-06",
+   "days": 28
+  },
+  {
+   "year": "2054/55",
+   "period": 13,
+   "label": "2054/55 P13",
+   "start": "2055-03-07",
+   "end": "2055-03-31",
+   "days": 25
+  }
+ ],
+ "possession_year": {
+  "year": "2054/55",
+  "start": "2054-04-04",
+  "end": "2055-04-02",
+  "weeks": 52,
+  "periods": [
+   {
+    "year": "2054/55",
+    "period": 1,
+    "label": "2054/55 P01",
+    "start": "2054-04-04",
+    "end": "2054-05-01",
+    "first_week": 1,
+    "last_week": 4,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 2,
+    "label": "2054/55 P02",
+    "start": "2054-05-02",
+    "end": "2054-05-29",
+    "first_week": 5,
+    "last_week": 8,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 3,
+    "label": "2054/55 P03",
+    "start": "2054-05-30",
+    "end": "2054-06-26",
+    "first_week": 9,
+    "last_week": 12,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 4,
+    "label": "2054/55 P04",
+    "start": "2054-06-27",
+    "end": "2054-07-24",
+    "first_week": 13,
+    "last_week": 16,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 5,
+    "label": "2054/55 P05",
+    "start": "2054-07-25",
+    "end": "2054-08-21",
+    "first_week": 17,
+    "last_week": 20,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 6,
+    "label": "2054/55 P06",
+    "start": "2054-08-22",
+    "end": "2054-09-18",
+    "first_week": 21,
+    "last_week": 24,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 7,
+    "label": "2054/55 P07",
+    "start": "2054-09-19",
+    "end": "2054-10-16",
+    "first_week": 25,
+    "last_week": 28,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 8,
+    "label": "2054/55 P08",
+    "start": "2054-10-17",
+    "end": "2054-11-13",
+    "first_week": 29,
+    "last_week": 32,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 9,
+    "label": "2054/55 P09",
+    "start": "2054-11-14",
+    "end": "2054-12-11",
+    "first_week": 33,
+    "last_week": 36,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 10,
+    "label": "2054/55 P10",
+    "start": "2054-12-12",
+    "end": "2055-01-08",
+    "first_week": 37,
+    "last_week": 40,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 11,
+    "label": "2054/55 P11",
+    "start": "2055-01-09",
+    "end": "2055-02-05",
+    "first_week": 41,
+    "last_week": 44,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 12,
+    "label": "2054/55 P12",
+    "start": "2055-02-06",
+    "end": "2055-03-05",
+    "first_week": 45,
+    "last_week": 48,
+    "weeks": 4
+   },
+   {
+    "year": "2054/55",
+    "period": 13,
+    "label": "2054/55 P13",
+    "start": "2055-03-06",
+    "end": "2055-04-02",
+    "first_week": 49,
+    "last_week": 52,
+    "weeks": 4
+   }
+  ],
+  "weeks_list": [
+   {
+    "year": "2054/55",
+    "week": 1,
+    "period": 1,
+    "week_in_period": 1,
+    "start": "2054-04-04",
+    "end": "2054-04-10",
+    "label": "2054/55 W01 (P01 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 2,
+    "period": 1,
+    "week_in_period": 2,
+    "start": "2054-04-11",
+    "end": "2054-04-17",
+    "label": "2054/55 W02 (P01 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 3,
+    "period": 1,
+    "week_in_period": 3,
+    "start": "2054-04-18",
+    "end": "2054-04-24",
+    "label": "2054/55 W03 (P01 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 4,
+    "period": 1,
+    "week_in_period": 4,
+    "start": "2054-04-25",
+    "end": "2054-05-01",
+    "label": "2054/55 W04 (P01 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 5,
+    "period": 2,
+    "week_in_period": 1,
+    "start": "2054-05-02",
+    "end": "2054-05-08",
+    "label": "2054/55 W05 (P02 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 6,
+    "period": 2,
+    "week_in_period": 2,
+    "start": "2054-05-09",
+    "end": "2054-05-15",
+    "label": "2054/55 W06 (P02 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 7,
+    "period": 2,
+    "week_in_period": 3,
+    "start": "2054-05-16",
+    "end": "2054-05-22",
+    "label": "2054/55 W07 (P02 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 8,
+    "period": 2,
+    "week_in_period": 4,
+    "start": "2054-05-23",
+    "end": "2054-05-29",
+    "label": "2054/55 W08 (P02 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 9,
+    "period": 3,
+    "week_in_period": 1,
+    "start": "2054-05-30",
+    "end": "2054-06-05",
+    "label": "2054/55 W09 (P03 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 10,
+    "period": 3,
+    "week_in_period": 2,
+    "start": "2054-06-06",
+    "end": "2054-06-12",
+    "label": "2054/55 W10 (P03 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 11,
+    "period": 3,
+    "week_in_period": 3,
+    "start": "2054-06-13",
+    "end": "2054-06-19",
+    "label": "2054/55 W11 (P03 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 12,
+    "period": 3,
+    "week_in_period": 4,
+    "start": "2054-06-20",
+    "end": "2054-06-26",
+    "label": "2054/55 W12 (P03 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 13,
+    "period": 4,
+    "week_in_period": 1,
+    "start": "2054-06-27",
+    "end": "2054-07-03",
+    "label": "2054/55 W13 (P04 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 14,
+    "period": 4,
+    "week_in_period": 2,
+    "start": "2054-07-04",
+    "end": "2054-07-10",
+    "label": "2054/55 W14 (P04 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 15,
+    "period": 4,
+    "week_in_period": 3,
+    "start": "2054-07-11",
+    "end": "2054-07-17",
+    "label": "2054/55 W15 (P04 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 16,
+    "period": 4,
+    "week_in_period": 4,
+    "start": "2054-07-18",
+    "end": "2054-07-24",
+    "label": "2054/55 W16 (P04 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 17,
+    "period": 5,
+    "week_in_period": 1,
+    "start": "2054-07-25",
+    "end": "2054-07-31",
+    "label": "2054/55 W17 (P05 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 18,
+    "period": 5,
+    "week_in_period": 2,
+    "start": "2054-08-01",
+    "end": "2054-08-07",
+    "label": "2054/55 W18 (P05 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 19,
+    "period": 5,
+    "week_in_period": 3,
+    "start": "2054-08-08",
+    "end": "2054-08-14",
+    "label": "2054/55 W19 (P05 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 20,
+    "period": 5,
+    "week_in_period": 4,
+    "start": "2054-08-15",
+    "end": "2054-08-21",
+    "label": "2054/55 W20 (P05 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 21,
+    "period": 6,
+    "week_in_period": 1,
+    "start": "2054-08-22",
+    "end": "2054-08-28",
+    "label": "2054/55 W21 (P06 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 22,
+    "period": 6,
+    "week_in_period": 2,
+    "start": "2054-08-29",
+    "end": "2054-09-04",
+    "label": "2054/55 W22 (P06 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 23,
+    "period": 6,
+    "week_in_period": 3,
+    "start": "2054-09-05",
+    "end": "2054-09-11",
+    "label": "2054/55 W23 (P06 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 24,
+    "period": 6,
+    "week_in_period": 4,
+    "start": "2054-09-12",
+    "end": "2054-09-18",
+    "label": "2054/55 W24 (P06 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 25,
+    "period": 7,
+    "week_in_period": 1,
+    "start": "2054-09-19",
+    "end": "2054-09-25",
+    "label": "2054/55 W25 (P07 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 26,
+    "period": 7,
+    "week_in_period": 2,
+    "start": "2054-09-26",
+    "end": "2054-10-02",
+    "label": "2054/55 W26 (P07 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 27,
+    "period": 7,
+    "week_in_period": 3,
+    "start": "2054-10-03",
+    "end": "2054-10-09",
+    "label": "2054/55 W27 (P07 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 28,
+    "period": 7,
+    "week_in_period": 4,
+    "start": "2054-10-10",
+    "end": "2054-10-16",
+    "label": "2054/55 W28 (P07 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 29,
+    "period": 8,
+    "week_in_period": 1,
+    "start": "2054-10-17",
+    "end": "2054-10-23",
+    "label": "2054/55 W29 (P08 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 30,
+    "period": 8,
+    "week_in_period": 2,
+    "start": "2054-10-24",
+    "end": "2054-10-30",
+    "label": "2054/55 W30 (P08 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 31,
+    "period": 8,
+    "week_in_period": 3,
+    "start": "2054-10-31",
+    "end": "2054-11-06",
+    "label": "2054/55 W31 (P08 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 32,
+    "period": 8,
+    "week_in_period": 4,
+    "start": "2054-11-07",
+    "end": "2054-11-13",
+    "label": "2054/55 W32 (P08 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 33,
+    "period": 9,
+    "week_in_period": 1,
+    "start": "2054-11-14",
+    "end": "2054-11-20",
+    "label": "2054/55 W33 (P09 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 34,
+    "period": 9,
+    "week_in_period": 2,
+    "start": "2054-11-21",
+    "end": "2054-11-27",
+    "label": "2054/55 W34 (P09 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 35,
+    "period": 9,
+    "week_in_period": 3,
+    "start": "2054-11-28",
+    "end": "2054-12-04",
+    "label": "2054/55 W35 (P09 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 36,
+    "period": 9,
+    "week_in_period": 4,
+    "start": "2054-12-05",
+    "end": "2054-12-11",
+    "label": "2054/55 W36 (P09 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 37,
+    "period": 10,
+    "week_in_period": 1,
+    "start": "2054-12-12",
+    "end": "2054-12-18",
+    "label": "2054/55 W37 (P10 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 38,
+    "period": 10,
+    "week_in_period": 2,
+    "start": "2054-12-19",
+    "end": "2054-12-25",
+    "label": "2054/55 W38 (P10 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 39,
+    "period": 10,
+    "week_in_period": 3,
+    "start": "2054-12-26",
+    "end": "2055-01-01",
+    "label": "2054/55 W39 (P10 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 40,
+    "period": 10,
+    "week_in_period": 4,
+    "start": "2055-01-02",
+    "end": "2055-01-08",
+    "label": "2054/55 W40 (P10 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 41,
+    "period": 11,
+    "week_in_period": 1,
+    "start": "2055-01-09",
+    "end": "2055-01-15",
+    "label": "2054/55 W41 (P11 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 42,
+    "period": 11,
+    "week_in_period": 2,
+    "start": "2055-01-16",
+    "end": "2055-01-22",
+    "label": "2054/55 W42 (P11 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 43,
+    "period": 11,
+    "week_in_period": 3,
+    "start": "2055-01-23",
+    "end": "2055-01-29",
+    "label": "2054/55 W43 (P11 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 44,
+    "period": 11,
+    "week_in_period": 4,
+    "start": "2055-01-30",
+    "end": "2055-02-05",
+    "label": "2054/55 W44 (P11 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 45,
+    "period": 12,
+    "week_in_period": 1,
+    "start": "2055-02-06",
+    "end": "2055-02-12",
+    "label": "2054/55 W45 (P12 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 46,
+    "period": 12,
+    "week_in_period": 2,
+    "start": "2055-02-13",
+    "end": "2055-02-19",
+    "label": "2054/55 W46 (P12 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 47,
+    "period": 12,
+    "week_in_period": 3,
+    "start": "2055-02-20",
+    "end": "2055-02-26",
+    "label": "2054/55 W47 (P12 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 48,
+    "period": 12,
+    "week_in_period": 4,
+    "start": "2055-02-27",
+    "end": "2055-03-05",
+    "label": "2054/55 W48 (P12 wk 4)"
+   },
+   {
+    "year": "2054/55",
+    "week": 49,
+    "period": 13,
+    "week_in_period": 1,
+    "start": "2055-03-06",
+    "end": "2055-03-12",
+    "label": "2054/55 W49 (P13 wk 1)"
+   },
+   {
+    "year": "2054/55",
+    "week": 50,
+    "period": 13,
+    "week_in_period": 2,
+    "start": "2055-03-13",
+    "end": "2055-03-19",
+    "label": "2054/55 W50 (P13 wk 2)"
+   },
+   {
+    "year": "2054/55",
+    "week": 51,
+    "period": 13,
+    "week_in_period": 3,
+    "start": "2055-03-20",
+    "end": "2055-03-26",
+    "label": "2054/55 W51 (P13 wk 3)"
+   },
+   {
+    "year": "2054/55",
+    "week": 52,
+    "period": 13,
+    "week_in_period": 4,
+    "start": "2055-03-27",
+    "end": "2055-04-02",
+    "label": "2054/55 W52 (P13 wk 4)"
+   }
+  ]
+ }
+}

@@ -1,0 +1,721 @@
+{
+ "financial_year": "2017/18",
+ "start": "2017-04-01",
+ "end": "2018-03-31",
+ "control_period": "CP5",
+ "control_period_year": 4,
+ "railway_periods": [
+  {
+   "year": "2017/18",
+   "period": 1,
+   "label": "2017/18 P01",
+   "start": "2017-04-01",
+   "end": "2017-04-29",
+   "days": 29
+  },
+  {
+   "year": "2017/18",
+   "period": 2,
+   "label": "2017/18 P02",
+   "start": "2017-04-30",
+   "end": "2017-05-27",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 3,
+   "label": "2017/18 P03",
+   "start": "2017-05-28",
+   "end": "2017-06-24",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 4,
+   "label": "2017/18 P04",
+   "start": "2017-06-25",
+   "end": "2017-07-22",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 5,
+   "label": "2017/18 P05",
+   "start": "2017-07-23",
+   "end": "2017-08-19",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 6,
+   "label": "2017/18 P06",
+   "start": "2017-08-20",
+   "end": "2017-09-16",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 7,
+   "label": "2017/18 P07",
+   "start": "2017-09-17",
+   "end": "2017-10-14",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 8,
+   "label": "2017/18 P08",
+   "start": "2017-10-15",
+   "end": "2017-11-11",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 9,
+   "label": "2017/18 P09",
+   "start": "2017-11-12",
+   "end": "2017-12-09",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 10,
+   "label": "2017/18 P10",
+   "start": "2017-12-10",
+   "end": "2018-01-06",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 11,
+   "label": "2017/18 P11",
+   "start": "2018-01-07",
+   "end": "2018-02-03",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 12,
+   "label": "2017/18 P12",
+   "start": "2018-02-04",
+   "end": "2018-03-03",
+   "days": 28
+  },
+  {
+   "year": "2017/18",
+   "period": 13,
+   "label": "2017/18 P13",
+   "start": "2018-03-04",
+   "end": "2018-03-31",
+   "days": 28
+  }
+ ],
+ "possession_year": {
+  "year": "2017/18",
+  "start": "2017-04-01",
+  "end": "2018-03-30",
+  "weeks": 52,
+  "periods": [
+   {
+    "year": "2017/18",
+    "period": 1,
+    "label": "2017/18 P01",
+    "start": "2017-04-01",
+    "end": "2017-04-28",
+    "first_week": 1,
+    "last_week": 4,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 2,
+    "label": "2017/18 P02",
+    "start": "2017-04-29",
+    "end": "2017-05-26",
+    "first_week": 5,
+    "last_week": 8,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 3,
+    "label": "2017/18 P03",
+    "start": "2017-05-27",
+    "end": "2017-06-23",
+    "first_week": 9,
+    "last_week": 12,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 4,
+    "label": "2017/18 P04",
+    "start": "2017-06-24",
+    "end": "2017-07-21",
+    "first_week": 13,
+    "last_week": 16,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 5,
+    "label": "2017/18 P05",
+    "start": "2017-07-22",
+    "end": "2017-08-18",
+    "first_week": 17,
+    "last_week": 20,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 6,
+    "label": "2017/18 P06",
+    "start": "2017-08-19",
+    "end": "2017-09-15",
+    "first_week": 21,
+    "last_week": 24,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 7,
+    "label": "2017/18 P07",
+    "start": "2017-09-16",
+    "end": "2017-10-13",
+    "first_week": 25,
+    "last_week": 28,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 8,
+    "label": "2017/18 P08",
+    "start": "2017-10-14",
+    "end": "2017-11-10",
+    "first_week": 29,
+    "last_week": 32,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 9,
+    "label": "2017/18 P09",
+    "start": "2017-11-11",
+    "end": "2017-12-08",
+    "first_week": 33,
+    "last_week": 36,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 10,
+    "label": "2017/18 P10",
+    "start": "2017-12-09",
+    "end": "2018-01-05",
+    "first_week": 37,
+    "last_week": 40,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 11,
+    "label": "2017/18 P11",
+    "start": "2018-01-06",
+    "end": "2018-02-02",
+    "first_week": 41,
+    "last_week": 44,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 12,
+    "label": "2017/18 P12",
+    "start": "2018-02-03",
+    "end": "2018-03-02",
+    "first_week": 45,
+    "last_week": 48,
+    "weeks": 4
+   },
+   {
+    "year": "2017/18",
+    "period": 13,
+    "label": "2017/18 P13",
+    "start": "2018-03-03",
+    "end": "2018-03-30",
+    "first_week": 49,
+    "last_week": 52,
+    "weeks": 4
+   }
+  ],
+  "weeks_list": [
+   {
+    "year": "2017/18",
+    "week": 1,
+    "period": 1,
+    "week_in_period": 1,
+    "start": "2017-04-01",
+    "end": "2017-04-07",
+    "label": "2017/18 W01 (P01 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 2,
+    "period": 1,
+    "week_in_period": 2,
+    "start": "2017-04-08",
+    "end": "2017-04-14",
+    "label": "2017/18 W02 (P01 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 3,
+    "period": 1,
+    "week_in_period": 3,
+    "start": "2017-04-15",
+    "end": "2017-04-21",
+    "label": "2017/18 W03 (P01 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 4,
+    "period": 1,
+    "week_in_period": 4,
+    "start": "2017-04-22",
+    "end": "2017-04-28",
+    "label": "2017/18 W04 (P01 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 5,
+    "period": 2,
+    "week_in_period": 1,
+    "start": "2017-04-29",
+    "end": "2017-05-05",
+    "label": "2017/18 W05 (P02 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 6,
+    "period": 2,
+    "week_in_period": 2,
+    "start": "2017-05-06",
+    "end": "2017-05-12",
+    "label": "2017/18 W06 (P02 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 7,
+    "period": 2,
+    "week_in_period": 3,
+    "start": "2017-05-13",
+    "end": "2017-05-19",
+    "label": "2017/18 W07 (P02 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 8,
+    "period": 2,
+    "week_in_period": 4,
+    "start": "2017-05-20",
+    "end": "2017-05-26",
+    "label": "2017/18 W08 (P02 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 9,
+    "period": 3,
+    "week_in_period": 1,
+    "start": "2017-05-27",
+    "end": "2017-06-02",
+    "label": "2017/18 W09 (P03 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 10,
+    "period": 3,
+    "week_in_period": 2,
+    "start": "2017-06-03",
+    "end": "2017-06-09",
+    "label": "2017/18 W10 (P03 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 11,
+    "period": 3,
+    "week_in_period": 3,
+    "start": "2017-06-10",
+    "end": "2017-06-16",
+    "label": "2017/18 W11 (P03 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 12,
+    "period": 3,
+    "week_in_period": 4,
+    "start": "2017-06-17",
+    "end": "2017-06-23",
+    "label": "2017/18 W12 (P03 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 13,
+    "period": 4,
+    "week_in_period": 1,
+    "start": "2017-06-24",
+    "end": "2017-06-30",
+    "label": "2017/18 W13 (P04 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 14,
+    "period": 4,
+    "week_in_period": 2,
+    "start": "2017-07-01",
+    "end": "2017-07-07",
+    "label": "2017/18 W14 (P04 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 15,
+    "period": 4,
+    "week_in_period": 3,
+    "start": "2017-07-08",
+    "end": "2017-07-14",
+    "label": "2017/18 W15 (P04 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 16,
+    "period": 4,
+    "week_in_period": 4,
+    "start": "2017-07-15",
+    "end": "2017-07-21",
+    "label": "2017/18 W16 (P04 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 17,
+    "period": 5,
+    "week_in_period": 1,
+    "start": "2017-07-22",
+    "end": "2017-07-28",
+    "label": "2017/18 W17 (P05 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 18,
+    "period": 5,
+    "week_in_period": 2,
+    "start": "2017-07-29",
+    "end": "2017-08-04",
+    "label": "2017/18 W18 (P05 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 19,
+    "period": 5,
+    "week_in_period": 3,
+    "start": "2017-08-05",
+    "end": "2017-08-11",
+    "label": "2017/18 W19 (P05 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 20,
+    "period": 5,
+    "week_in_period": 4,
+    "start": "2017-08-12",
+    "end": "2017-08-18",
+    "label": "2017/18 W20 (P05 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 21,
+    "period": 6,
+    "week_in_period": 1,
+    "start": "2017-08-19",
+    "end": "2017-08-25",
+    "label": "2017/18 W21 (P06 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 22,
+    "period": 6,
+    "week_in_period": 2,
+    "start": "2017-08-26",
+    "end": "2017-09-01",
+    "label": "2017/18 W22 (P06 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 23,
+    "period": 6,
+    "week_in_period": 3,
+    "start": "2017-09-02",
+    "end": "2017-09-08",
+    "label": "2017/18 W23 (P06 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 24,
+    "period": 6,
+    "week_in_period": 4,
+    "start": "2017-09-09",
+    "end": "2017-09-15",
+    "label": "2017/18 W24 (P06 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 25,
+    "period": 7,
+    "week_in_period": 1,
+    "start": "2017-09-16",
+    "end": "2017-09-22",
+    "label": "2017/18 W25 (P07 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 26,
+    "period": 7,
+    "week_in_period": 2,
+    "start": "2017-09-23",
+    "end": "2017-09-29",
+    "label": "2017/18 W26 (P07 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 27,
+    "period": 7,
+    "week_in_period": 3,
+    "start": "2017-09-30",
+    "end": "2017-10-06",
+    "label": "2017/18 W27 (P07 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 28,
+    "period": 7,
+    "week_in_period": 4,
+    "start": "2017-10-07",
+    "end": "2017-10-13",
+    "label": "2017/18 W28 (P07 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 29,
+    "period": 8,
+    "week_in_period": 1,
+    "start": "2017-10-14",
+    "end": "2017-10-20",
+    "label": "2017/18 W29 (P08 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 30,
+    "period": 8,
+    "week_in_period": 2,
+    "start": "2017-10-21",
+    "end": "2017-10-27",
+    "label": "2017/18 W30 (P08 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 31,
+    "period": 8,
+    "week_in_period": 3,
+    "start": "2017-10-28",
+    "end": "2017-11-03",
+    "label": "2017/18 W31 (P08 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 32,
+    "period": 8,
+    "week_in_period": 4,
+    "start": "2017-11-04",
+    "end": "2017-11-10",
+    "label": "2017/18 W32 (P08 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 33,
+    "period": 9,
+    "week_in_period": 1,
+    "start": "2017-11-11",
+    "end": "2017-11-17",
+    "label": "2017/18 W33 (P09 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 34,
+    "period": 9,
+    "week_in_period": 2,
+    "start": "2017-11-18",
+    "end": "2017-11-24",
+    "label": "2017/18 W34 (P09 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 35,
+    "period": 9,
+    "week_in_period": 3,
+    "start": "2017-11-25",
+    "end": "2017-12-01",
+    "label": "2017/18 W35 (P09 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 36,
+    "period": 9,
+    "week_in_period": 4,
+    "start": "2017-12-02",
+    "end": "2017-12-08",
+    "label": "2017/18 W36 (P09 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 37,
+    "period": 10,
+    "week_in_period": 1,
+    "start": "2017-12-09",
+    "end": "2017-12-15",
+    "label": "2017/18 W37 (P10 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 38,
+    "period": 10,
+    "week_in_period": 2,
+    "start": "2017-12-16",
+    "end": "2017-12-22",
+    "label": "2017/18 W38 (P10 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 39,
+    "period": 10,
+    "week_in_period": 3,
+    "start": "2017-12-23",
+    "end": "2017-12-29",
+    "label": "2017/18 W39 (P10 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 40,
+    "period": 10,
+    "week_in_period": 4,
+    "start": "2017-12-30",
+    "end": "2018-01-05",
+    "label": "2017/18 W40 (P10 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 41,
+    "period": 11,
+    "week_in_period": 1,
+    "start": "2018-01-06",
+    "end": "2018-01-12",
+    "label": "2017/18 W41 (P11 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 42,
+    "period": 11,
+    "week_in_period": 2,
+    "start": "2018-01-13",
+    "end": "2018-01-19",
+    "label": "2017/18 W42 (P11 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 43,
+    "period": 11,
+    "week_in_period": 3,
+    "start": "2018-01-20",
+    "end": "2018-01-26",
+    "label": "2017/18 W43 (P11 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 44,
+    "period": 11,
+    "week_in_period": 4,
+    "start": "2018-01-27",
+    "end": "2018-02-02",
+    "label": "2017/18 W44 (P11 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 45,
+    "period": 12,
+    "week_in_period": 1,
+    "start": "2018-02-03",
+    "end": "2018-02-09",
+    "label": "2017/18 W45 (P12 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 46,
+    "period": 12,
+    "week_in_period": 2,
+    "start": "2018-02-10",
+    "end": "2018-02-16",
+    "label": "2017/18 W46 (P12 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 47,
+    "period": 12,
+    "week_in_period": 3,
+    "start": "2018-02-17",
+    "end": "2018-02-23",
+    "label": "2017/18 W47 (P12 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 48,
+    "period": 12,
+    "week_in_period": 4,
+    "start": "2018-02-24",
+    "end": "2018-03-02",
+    "label": "2017/18 W48 (P12 wk 4)"
+   },
+   {
+    "year": "2017/18",
+    "week": 49,
+    "period": 13,
+    "week_in_period": 1,
+    "start": "2018-03-03",
+    "end": "2018-03-09",
+    "label": "2017/18 W49 (P13 wk 1)"
+   },
+   {
+    "year": "2017/18",
+    "week": 50,
+    "period": 13,
+    "week_in_period": 2,
+    "start": "2018-03-10",
+    "end": "2018-03-16",
+    "label": "2017/18 W50 (P13 wk 2)"
+   },
+   {
+    "year": "2017/18",
+    "week": 51,
+    "period": 13,
+    "week_in_period": 3,
+    "start": "2018-03-17",
+    "end": "2018-03-23",
+    "label": "2017/18 W51 (P13 wk 3)"
+   },
+   {
+    "year": "2017/18",
+    "week": 52,
+    "period": 13,
+    "week_in_period": 4,
+    "start": "2018-03-24",
+    "end": "2018-03-30",
+    "label": "2017/18 W52 (P13 wk 4)"
+   }
+  ]
+ }
+}

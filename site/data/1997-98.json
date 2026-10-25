@@ -1,0 +1,730 @@
+{
+ "financial_year": "1997/98",
+ "start": "1997-04-01",
+ "end": "1998-03-31",
+ "control_period": "CP1",
+ "control_period_year": 4,
+ "railway_periods": [
+  {
+   "year": "1997/98",
+   "period": 1,
+   "label": "1997/98 P01",
+   "start": "1997-04-01",
+   "end": "1997-04-26",
+   "days": 26
+  },
+  {
+   "year": "1997/98",
+   "period": 2,
+   "label": "1997/98 P02",
+   "start": "1997-04-27",
+   "end": "1997-05-24",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 3,
+   "label": "1997/98 P03",
+   "start": "1997-05-25",
+   "end": "1997-06-21",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 4,
+   "label": "1997/98 P04",
+   "start": "1997-06-22",
+   "end": "1997-07-19",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 5,
+   "label": "1997/98 P05",
+   "start": "1997-07-20",
+   "end": "1997-08-16",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 6,
+   "label": "1997/98 P06",
+   "start": "1997-08-17",
+   "end": "1997-09-13",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 7,
+   "label": "1997/98 P07",
+   "start": "1997-09-14",
+   "end": "1997-10-11",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 8,
+   "label": "1997/98 P08",
+   "start": "1997-10-12",
+   "end": "1997-11-08",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 9,
+   "label": "1997/98 P09",
+   "start": "1997-11-09",
+   "end": "1997-12-06",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 10,
+   "label": "1997/98 P10",
+   "start": "1997-12-07",
+   "end": "1998-01-03",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 11,
+   "label": "1997/98 P11",
+   "start": "1998-01-04",
+   "end": "1998-01-31",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 12,
+   "label": "1997/98 P12",
+   "start": "1998-02-01",
+   "end": "1998-02-28",
+   "days": 28
+  },
+  {
+   "year": "1997/98",
+   "period": 13,
+   "label": "1997/98 P13",
+   "start": "1998-03-01",
+   "end": "1998-03-31",
+   "days": 31
+  }
+ ],
+ "possession_year": {
+  "year": "1997/98",
+  "start": "1997-03-29",
+  "end": "1998-04-03",
+  "weeks": 53,
+  "periods": [
+   {
+    "year": "1997/98",
+    "period": 1,
+    "label": "1997/98 P01",
+    "start": "1997-03-29",
+    "end": "1997-04-25",
+    "first_week": 1,
+    "last_week": 4,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 2,
+    "label": "1997/98 P02",
+    "start": "1997-04-26",
+    "end": "1997-05-23",
+    "first_week": 5,
+    "last_week": 8,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 3,
+    "label": "1997/98 P03",
+    "start": "1997-05-24",
+    "end": "1997-06-20",
+    "first_week": 9,
+    "last_week": 12,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 4,
+    "label": "1997/98 P04",
+    "start": "1997-06-21",
+    "end": "1997-07-18",
+    "first_week": 13,
+    "last_week": 16,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 5,
+    "label": "1997/98 P05",
+    "start": "1997-07-19",
+    "end": "1997-08-15",
+    "first_week": 17,
+    "last_week": 20,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 6,
+    "label": "1997/98 P06",
+    "start": "1997-08-16",
+    "end": "1997-09-12",
+    "first_week": 21,
+    "last_week": 24,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 7,
+    "label": "1997/98 P07",
+    "start": "1997-09-13",
+    "end": "1997-10-10",
+    "first_week": 25,
+    "last_week": 28,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 8,
+    "label": "1997/98 P08",
+    "start": "1997-10-11",
+    "end": "1997-11-07",
+    "first_week": 29,
+    "last_week": 32,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 9,
+    "label": "1997/98 P09",
+    "start": "1997-11-08",
+    "end": "1997-12-05",
+    "first_week": 33,
+    "last_week": 36,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 10,
+    "label": "1997/98 P10",
+    "start": "1997-12-06",
+    "end": "1998-01-02",
+    "first_week": 37,
+    "last_week": 40,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 11,
+    "label": "1997/98 P11",
+    "start": "1998-01-03",
+    "end": "1998-01-30",
+    "first_week": 41,
+    "last_week": 44,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 12,
+    "label": "1997/98 P12",
+    "start": "1998-01-31",
+    "end": "1998-02-27",
+    "first_week": 45,
+    "last_week": 48,
+    "weeks": 4
+   },
+   {
+    "year": "1997/98",
+    "period": 13,
+    "label": "1997/98 P13",
+    "start": "1998-02-28",
+    "end": "1998-04-03",
+    "first_week": 49,
+    "last_week": 53,
+    "weeks": 5
+   }
+  ],
+  "weeks_list": [
+   {
+    "year": "1997/98",
+    "week": 1,
+    "period": 1,
+    "week_in_period": 1,
+    "start": "1997-03-29",
+    "end": "1997-04-04",
+    "label": "1997/98 W01 (P01 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 2,
+    "period": 1,
+    "week_in_period": 2,
+    "start": "1997-04-05",
+    "end": "1997-04-11",
+    "label": "1997/98 W02 (P01 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 3,
+    "period": 1,
+    "week_in_period": 3,
+    "start": "1997-04-12",
+    "end": "1997-04-18",
+    "label": "1997/98 W03 (P01 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 4,
+    "period": 1,
+    "week_in_period": 4,
+    "start": "1997-04-19",
+    "end": "1997-04-25",
+    "label": "1997/98 W04 (P01 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 5,
+    "period": 2,
+    "week_in_period": 1,
+    "start": "1997-04-26",
+    "end": "1997-05-02",
+    "label": "1997/98 W05 (P02 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 6,
+    "period": 2,
+    "week_in_period": 2,
+    "start": "1997-05-03",
+    "end": "1997-05-09",
+    "label": "1997/98 W06 (P02 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 7,
+    "period": 2,
+    "week_in_period": 3,
+    "start": "1997-05-10",
+    "end": "1997-05-16",
+    "label": "1997/98 W07 (P02 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 8,
+    "period": 2,
+    "week_in_period": 4,
+    "start": "1997-05-17",
+    "end": "1997-05-23",
+    "label": "1997/98 W08 (P02 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 9,
+    "period": 3,
+    "week_in_period": 1,
+    "start": "1997-05-24",
+    "end": "1997-05-30",
+    "label": "1997/98 W09 (P03 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 10,
+    "period": 3,
+    "week_in_period": 2,
+    "start": "1997-05-31",
+    "end": "1997-06-06",
+    "label": "1997/98 W10 (P03 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 11,
+    "period": 3,
+    "week_in_period": 3,
+    "start": "1997-06-07",
+    "end": "1997-06-13",
+    "label": "1997/98 W11 (P03 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 12,
+    "period": 3,
+    "week_in_period": 4,
+    "start": "1997-06-14",
+    "end": "1997-06-20",
+    "label": "1997/98 W12 (P03 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 13,
+    "period": 4,
+    "week_in_period": 1,
+    "start": "1997-06-21",
+    "end": "1997-06-27",
+    "label": "1997/98 W13 (P04 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 14,
+    "period": 4,
+    "week_in_period": 2,
+    "start": "1997-06-28",
+    "end": "1997-07-04",
+    "label": "1997/98 W14 (P04 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 15,
+    "period": 4,
+    "week_in_period": 3,
+    "start": "1997-07-05",
+    "end": "1997-07-11",
+    "label": "1997/98 W15 (P04 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 16,
+    "period": 4,
+    "week_in_period": 4,
+    "start": "1997-07-12",
+    "end": "1997-07-18",
+    "label": "1997/98 W16 (P04 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 17,
+    "period": 5,
+    "week_in_period": 1,
+    "start": "1997-07-19",
+    "end": "1997-07-25",
+    "label": "1997/98 W17 (P05 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 18,
+    "period": 5,
+    "week_in_period": 2,
+    "start": "1997-07-26",
+    "end": "1997-08-01",
+    "label": "1997/98 W18 (P05 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 19,
+    "period": 5,
+    "week_in_period": 3,
+    "start": "1997-08-02",
+    "end": "1997-08-08",
+    "label": "1997/98 W19 (P05 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 20,
+    "period": 5,
+    "week_in_period": 4,
+    "start": "1997-08-09",
+    "end": "1997-08-15",
+    "label": "1997/98 W20 (P05 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 21,
+    "period": 6,
+    "week_in_period": 1,
+    "start": "1997-08-16",
+    "end": "1997-08-22",
+    "label": "1997/98 W21 (P06 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 22,
+    "period": 6,
+    "week_in_period": 2,
+    "start": "1997-08-23",
+    "end": "1997-08-29",
+    "label": "1997/98 W22 (P06 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 23,
+    "period": 6,
+    "week_in_period": 3,
+    "start": "1997-08-30",
+    "end": "1997-09-05",
+    "label": "1997/98 W23 (P06 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 24,
+    "period": 6,
+    "week_in_period": 4,
+    "start": "1997-09-06",
+    "end": "1997-09-12",
+    "label": "1997/98 W24 (P06 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 25,
+    "period": 7,
+    "week_in_period": 1,
+    "start": "1997-09-13",
+    "end": "1997-09-19",
+    "label": "1997/98 W25 (P07 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 26,
+    "period": 7,
+    "week_in_period": 2,
+    "start": "1997-09-20",
+    "end": "1997-09-26",
+    "label": "1997/98 W26 (P07 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 27,
+    "period": 7,
+    "week_in_period": 3,
+    "start": "1997-09-27",
+    "end": "1997-10-03",
+    "label": "1997/98 W27 (P07 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 28,
+    "period": 7,
+    "week_in_period": 4,
+    "start": "1997-10-04",
+    "end": "1997-10-10",
+    "label": "1997/98 W28 (P07 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 29,
+    "period": 8,
+    "week_in_period": 1,
+    "start": "1997-10-11",
+    "end": "1997-10-17",
+    "label": "1997/98 W29 (P08 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 30,
+    "period": 8,
+    "week_in_period": 2,
+    "start": "1997-10-18",
+    "end": "1997-10-24",
+    "label": "1997/98 W30 (P08 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 31,
+    "period": 8,
+    "week_in_period": 3,
+    "start": "1997-10-25",
+    "end": "1997-10-31",
+    "label": "1997/98 W31 (P08 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 32,
+    "period": 8,
+    "week_in_period": 4,
+    "start": "1997-11-01",
+    "end": "1997-11-07",
+    "label": "1997/98 W32 (P08 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 33,
+    "period": 9,
+    "week_in_period": 1,
+    "start": "1997-11-08",
+    "end": "1997-11-14",
+    "label": "1997/98 W33 (P09 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 34,
+    "period": 9,
+    "week_in_period": 2,
+    "start": "1997-11-15",
+    "end": "1997-11-21",
+    "label": "1997/98 W34 (P09 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 35,
+    "period": 9,
+    "week_in_period": 3,
+    "start": "1997-11-22",
+    "end": "1997-11-28",
+    "label": "1997/98 W35 (P09 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 36,
+    "period": 9,
+    "week_in_period": 4,
+    "start": "1997-11-29",
+    "end": "1997-12-05",
+    "label": "1997/98 W36 (P09 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 37,
+    "period": 10,
+    "week_in_period": 1,
+    "start": "1997-12-06",
+    "end": "1997-12-12",
+    "label": "1997/98 W37 (P10 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 38,
+    "period": 10,
+    "week_in_period": 2,
+    "start": "1997-12-13",
+    "end": "1997-12-19",
+    "label": "1997/98 W38 (P10 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 39,
+    "period": 10,
+    "week_in_period": 3,
+    "start": "1997-12-20",
+    "end": "1997-12-26",
+    "label": "1997/98 W39 (P10 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 40,
+    "period": 10,
+    "week_in_period": 4,
+    "start": "1997-12-27",
+    "end": "1998-01-02",
+    "label": "1997/98 W40 (P10 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 41,
+    "period": 11,
+    "week_in_period": 1,
+    "start": "1998-01-03",
+    "end": "1998-01-09",
+    "label": "1997/98 W41 (P11 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 42,
+    "period": 11,
+    "week_in_period": 2,
+    "start": "1998-01-10",
+    "end": "1998-01-16",
+    "label": "1997/98 W42 (P11 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 43,
+    "period": 11,
+    "week_in_period": 3,
+    "start": "1998-01-17",
+    "end": "1998-01-23",
+    "label": "1997/98 W43 (P11 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 44,
+    "period": 11,
+    "week_in_period": 4,
+    "start": "1998-01-24",
+    "end": "1998-01-30",
+    "label": "1997/98 W44 (P11 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 45,
+    "period": 12,
+    "week_in_period": 1,
+    "start": "1998-01-31",
+    "end": "1998-02-06",
+    "label": "1997/98 W45 (P12 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 46,
+    "period": 12,
+    "week_in_period": 2,
+    "start": "1998-02-07",
+    "end": "1998-02-13",
+    "label": "1997/98 W46 (P12 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 47,
+    "period": 12,
+    "week_in_period": 3,
+    "start": "1998-02-14",
+    "end": "1998-02-20",
+    "label": "1997/98 W47 (P12 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 48,
+    "period": 12,
+    "week_in_period": 4,
+    "start": "1998-02-21",
+    "end": "1998-02-27",
+    "label": "1997/98 W48 (P12 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 49,
+    "period": 13,
+    "week_in_period": 1,
+    "start": "1998-02-28",
+    "end": "1998-03-06",
+    "label": "1997/98 W49 (P13 wk 1)"
+   },
+   {
+    "year": "1997/98",
+    "week": 50,
+    "period": 13,
+    "week_in_period": 2,
+    "start": "1998-03-07",
+    "end": "1998-03-13",
+    "label": "1997/98 W50 (P13 wk 2)"
+   },
+   {
+    "year": "1997/98",
+    "week": 51,
+    "period": 13,
+    "week_in_period": 3,
+    "start": "1998-03-14",
+    "end": "1998-03-20",
+    "label": "1997/98 W51 (P13 wk 3)"
+   },
+   {
+    "year": "1997/98",
+    "week": 52,
+    "period": 13,
+    "week_in_period": 4,
+    "start": "1998-03-21",
+    "end": "1998-03-27",
+    "label": "1997/98 W52 (P13 wk 4)"
+   },
+   {
+    "year": "1997/98",
+    "week": 53,
+    "period": 13,
+    "week_in_period": 5,
+    "start": "1998-03-28",
+    "end": "1998-04-03",
+    "label": "1997/98 W53 (P13 wk 5)"
+   }
+  ]
+ }
+}

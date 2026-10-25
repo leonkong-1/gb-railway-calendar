@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.claude/
+
+# Snapshot of railwaycalendar.com's tables: used locally for tests/check_railwaycalendar.py, not redistributed
+tests/fixtures/railwaycalendar_snapshot.json

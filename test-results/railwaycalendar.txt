@@ -1,0 +1,9 @@
+railwaycalendar.com year tables, financial years 2004/05 to 2049/50
+  control period label                46
+  possession year start/length        92
+  railway period                     598
+  possession period                  598
+  possession week                   2446
+  timetable block                    828
+  timetable year                      92
+4700 checks, 0 mismatches

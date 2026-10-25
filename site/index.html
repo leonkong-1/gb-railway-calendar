@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GB Railway Calendar</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Railway periods, possession weeks and timetable blocks for the GB railway: what today is, date ranges for any period or week, and a browsable calendar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800&family=Overpass+Mono:wght@400;600&display=swap">
+<style>
+  /* Layout: a sleeper-striped header with three tabs; each view is one column of cards, the calendar a grid of period cards. */
+  :root {
+    --bg: #eef0f2;
+    --surface: #ffffff;
+    --ink: #17212b;
+    --muted: #5a6673;
+    --line: #d4d9df;
+    --rail: #1d5fae;      /* railway periods */
+    --poss: #d9480f;      /* possession weeks: hi-vis orange */
+    --tt: #2b8a3e;        /* timetable */
+    --hl-bg: #ffe066;
+    --hl-ink: #17212b;
+    --weekend: #f6f1ea;
+    --sleeper: #c9ced4;
+    --font-display: "Overpass", "Segoe UI", system-ui, sans-serif;
+    --font-body: "Overpass", "Segoe UI", system-ui, sans-serif;
+    --font-data: "Overpass Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+    --r: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10161c; --surface: #18212a; --ink: #e5eaef; --muted: #94a0ac; --line: #2c3742;
+      --rail: #6ea8ef; --poss: #ff8a4c; --tt: #69c27b; --hl-bg: #7a6300; --hl-ink: #fff8d6;
+      --weekend: #1f2730; --sleeper: #2c3742; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10161c; --surface: #18212a; --ink: #e5eaef; --muted: #94a0ac; --line: #2c3742;
+    --rail: #6ea8ef; --poss: #ff8a4c; --tt: #69c27b; --hl-bg: #7a6300; --hl-ink: #fff8d6;
+    --weekend: #1f2730; --sleeper: #2c3742; color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5;
+  }
+  .wrap {
+    max-width: 1180px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; text-wrap: balance; margin: 0; }
+  button, input { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--rail); outline-offset: 2px; }
+
+  /* Header */
+  .top { background: var(--surface); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-block: 14px 0; }
+  .brand { font-family: var(--font-display); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; margin-right: auto; }
+  .brand small { display: block; font-weight: 400; font-size: 12px; color: var(--muted); letter-spacing: 0.02em; }
+  nav { display: flex; gap: 4px; }
+  nav button {
+    border: 0; background: none; padding: 10px 14px 12px; cursor: pointer; font-weight: 600; color: var(--muted);
+    border-bottom: 3px solid transparent;
+  }
+  nav button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+  .sleepers { height: 6px; background: repeating-linear-gradient(90deg, var(--sleeper) 0 14px, transparent 14px 26px); }
+
+  main .wrap { padding-block: 28px 40px; display: grid; gap: 24px; }
+  .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+  .lede { color: var(--muted); margin: 0; max-width: 62ch; }
+
+  /* Today */
+  .today-head { display: flex; flex-wrap: wrap; align-items: end; gap: 12px 24px; }
+  .today-head h1 { font-size: clamp(26px, 4.5vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
+  .today-head .grow { flex: 1 1 320px; min-width: 0; display: grid; gap: 4px; }
+  .datepick { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  input[type="date"], input[type="search"], input[type="text"] {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-width: 0;
+  }
+  .btn {
+    border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 8px 12px; cursor: pointer; font-weight: 600;
+  }
+  .btn:hover { border-color: var(--muted); }
+  .btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .meta { font-family: var(--font-data); font-size: 13px; color: var(--muted); }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px;
+    display: grid; gap: 10px; align-content: start; min-width: 0;
+  }
+  .kind { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .kind::before { content: ""; width: 10px; height: 10px; border-radius: 2px; background: var(--c); }
+  .c-rail { --c: var(--rail); } .c-poss { --c: var(--poss); } .c-tt { --c: var(--tt); }
+  .big { font-family: var(--font-display); font-weight: 800; font-size: 44px; line-height: 1; letter-spacing: -0.02em; color: var(--c); font-variant-numeric: tabular-nums; }
+  .big small { font-size: 18px; font-weight: 600; color: var(--ink); letter-spacing: 0; margin-left: 6px; }
+  .range { font-family: var(--font-data); font-size: 14px; }
+  .sub { color: var(--muted); font-size: 14px; }
+  .segs { display: flex; gap: 2px; }
+  .segs span { flex: 1; height: 8px; border-radius: 2px; background: var(--line); }
+  .segs span.on { background: var(--c); }
+  .segs span.gap { margin-left: 4px; }
+  .seglabels { display: flex; gap: 2px; font-family: var(--font-data); font-size: 11px; color: var(--muted); }
+  .seglabels span { flex: 1; text-align: center; }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-size: 14px; margin: 0; }
+  .kv dt { color: var(--muted); }
+  .kv dd { margin: 0; font-family: var(--font-data); font-size: 13px; }
+
+  /* JSON panel */
+  .json { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); min-width: 0; }
+  .json summary { cursor: pointer; padding: 12px 16px; font-weight: 600; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .json summary .meta { font-weight: 400; }
+  .json .bar { display: flex; justify-content: flex-end; padding: 0 16px; }
+  .json pre { margin: 0; padding: 12px 16px 16px; overflow-x: auto; font-family: var(--font-data); font-size: 12.5px; line-height: 1.55; max-height: 420px; }
+
+  /* Lookup */
+  .lookup-form { display: flex; flex-wrap: wrap; gap: 8px; }
+  .lookup-form input { flex: 1 1 260px; font-size: 18px; padding: 10px 14px; font-family: var(--font-data); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 10px; cursor: pointer; font-family: var(--font-data); font-size: 13px; }
+  .chip:hover { border-color: var(--muted); }
+  .error { border-left: 3px solid var(--poss); padding: 10px 14px; background: var(--surface); border-radius: 0 8px 8px 0; margin: 0; }
+  table.plain { border-collapse: collapse; width: 100%; font-size: 14px; }
+  table.plain th, table.plain td { text-align: left; padding: 5px 10px 5px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  table.plain th { font-size: 12px; color: var(--muted); font-weight: 600; }
+  table.plain td { font-family: var(--font-data); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .scroll { overflow-x: auto; }
+
+  /* Calendar */
+  .cal-controls { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+  .seg button { border: 0; background: none; padding: 8px 12px; cursor: pointer; font-weight: 600; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .seg button::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--c); }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button[aria-pressed="true"] { color: var(--ink); background: var(--bg); }
+  .stepper { display: inline-flex; align-items: center; gap: 4px; }
+  .stepper .btn { padding: 6px 10px; }
+  .stepper strong { font-family: var(--font-data); min-width: 6.5em; text-align: center; }
+  .cal-search { display: flex; gap: 6px; flex: 1 1 260px; min-width: 0; }
+  .cal-search input { flex: 1; min-width: 0; font-family: var(--font-data); }
+  .cal-summary { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
+  .cal-summary h2 { font-size: 22px; font-weight: 800; }
+  .cal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 14px; }
+  .grp { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 12px 10px; min-width: 0; }
+  .grp header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .grp h3 { font-size: 17px; font-weight: 800; color: var(--c); }
+  .grp header .meta { font-size: 11.5px; text-align: right; }
+  .row { display: grid; grid-template-columns: 2em repeat(7, 1fr); gap: 2px; }
+  .row.nolabel { grid-template-columns: repeat(7, 1fr); }
+  .row + .row { margin-top: 2px; }
+  .row .lab { font-family: var(--font-data); font-size: 11px; color: var(--c); font-weight: 600; display: flex; align-items: center; }
+  .dh { font-size: 11px; color: var(--muted); text-align: center; font-weight: 600; }
+  .d {
+    position: relative; text-align: center; font-family: var(--font-data); font-size: 12.5px; padding: 5px 0 3px;
+    border-radius: 4px; font-variant-numeric: tabular-nums;
+  }
+  .d.we { background: var(--weekend); }
+  .d.out { color: transparent; background: none; }
+  .d .mo { position: absolute; top: -1px; left: 2px; font-size: 8.5px; color: var(--muted); letter-spacing: 0.02em; }
+  .d.out .mo { color: transparent; }
+  .d.hl { background: var(--hl-bg); color: var(--hl-ink); }
+  .d.today { outline: 2px solid var(--ink); outline-offset: -2px; font-weight: 600; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+
+  footer { border-top: 1px solid var(--line); }
+  footer .wrap { padding-block: 20px 32px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); font-size: 13.5px; color: var(--muted); }
+  footer h3 { font-size: 13px; color: var(--ink); margin-bottom: 4px; }
+  footer p { margin: 0; }
+  code { font-family: var(--font-data); font-size: 0.92em; }
+
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">GB Railway Calendar<small>Railway periods &#xb7; possession weeks &#xb7; timetable blocks</small></div>
+    <nav role="tablist" aria-label="Views">
+      <button role="tab" id="tab-today" data-view="today" aria-selected="true">Today</button>
+      <button role="tab" id="tab-lookup" data-view="lookup" aria-selected="false">Look up</button>
+      <button role="tab" id="tab-calendar" data-view="calendar" aria-selected="false">Calendar</button>
+    </nav>
+  </div>
+  <div class="sleepers" aria-hidden="true"></div>
+</header>
+
+<main>
+  <!-- Today -->
+  <section id="v-today" role="tabpanel" aria-labelledby="tab-today">
+    <div class="wrap">
+      <div class="today-head">
+        <div class="grow">
+          <p class="eyebrow" id="t-eyebrow">Today in London</p>
+          <h1 id="t-date">&#x2026;</h1>
+          <p class="meta" id="t-fy"></p>
+        </div>
+        <div class="datepick">
+          <label for="t-pick" class="sub">Check another date</label>
+          <input type="date" id="t-pick">
+          <button class="btn" id="t-reset" hidden>Back to today</button>
+        </div>
+      </div>
+      <div class="cards" id="t-cards"></div>
+      <details class="json" id="t-json"><summary>JSON <span class="meta">machine-readable answer for this date</span></summary><div class="bar"><button class="btn" data-copy="t-json-pre">Copy JSON</button></div><pre id="t-json-pre"></pre></details>
+    </div>
+  </section>
+
+  <!-- Look up -->
+  <section id="v-lookup" role="tabpanel" aria-labelledby="tab-lookup" hidden>
+    <div class="wrap">
+      <div style="display:grid;gap:6px">
+        <h1 style="font-size:28px;font-weight:800">Find the dates for a period, week or timetable</h1>
+        <p class="lede">Type it the way you would say it. Without a year, the current one is used.</p>
+      </div>
+      <form class="lookup-form" id="l-form" autocomplete="off">
+        <input type="search" id="l-q" aria-label="Period, week, date or timetable" spellcheck="false">
+        <button class="btn primary" type="submit">Look up</button>
+      </form>
+      <div class="chips" id="l-chips"><span class="sub">Try:</span></div>
+      <div id="l-out" style="display:grid;gap:16px"></div>
+      <details class="json" id="l-json"><summary>JSON <span class="meta">machine-readable answer for this query</span></summary><div class="bar"><button class="btn" data-copy="l-json-pre">Copy JSON</button></div><pre id="l-json-pre"></pre></details>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+  <section id="v-calendar" role="tabpanel" aria-labelledby="tab-calendar" hidden>
+    <div class="wrap">
+      <div class="cal-controls">
+        <div class="seg" role="group" aria-label="Calendar">
+          <button class="c-poss" data-cal="poss" aria-pressed="true">Possession weeks</button>
+          <button class="c-rail" data-cal="rail" aria-pressed="false">Railway periods</button>
+          <button class="c-tt" data-cal="tt" aria-pressed="false">Timetable</button>
+        </div>
+        <div class="stepper">
+          <button class="btn" id="c-prev" aria-label="Previous year">&#x2039;</button>
+          <strong id="c-year"></strong>
+          <button class="btn" id="c-next" aria-label="Next year">&#x203a;</button>
+          <button class="btn" id="c-now">This year</button>
+        </div>
+        <form class="cal-search" id="c-form" autocomplete="off">
+          <input type="search" id="c-q" placeholder="Find: P8, wk 31, 25/12/2026, TT2027 block C" aria-label="Find in calendar" spellcheck="false">
+          <button class="btn" type="submit">Find</button>
+        </form>
+      </div>
+      <p class="error" id="c-err" hidden></p>
+      <div class="cal-summary" id="c-summary"></div>
+      <div class="legend" id="c-legend"></div>
+      <div class="cal-grid" id="c-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>Railway periods</h3>
+      <p>13 periods across the financial year, 1 April to 31 March, with weeks running Sunday to Saturday. P2 to P12 are always 28 days; P1 starts on 1 April and P13 ends on 31 March.</p>
+    </div>
+    <div>
+      <h3>Possession weeks</h3>
+      <p>Saturday to Friday, so a weekend&#x2019;s possessions fall in one week. Week 1 starts on the Saturday nearest 1 April. 13 periods of 4 weeks; a 53rd week joins P13.</p>
+    </div>
+    <div>
+      <h3>Timetable</h3>
+      <p>The December timetable starts on the Sunday after the second Saturday in December and the May timetable on the third Sunday in May. Blocks A&#x2013;D cover December to May, E&#x2013;J May to December.</p>
+    </div>
+    <div>
+      <h3>Machine-readable data</h3>
+      <p>Every answer has a JSON view. Whole years are also published as static files: <code>data/2026-27.json</code>, <code>data/timetable-2027.json</code>, listed in <code>data/index.json</code>.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="railcal.js"></script>
+<script>
+(() => {
+  "use strict";
+  const R = window.RailCal;
+  const $ = (id) => document.getElementById(id);
+  const W3 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const W1 = ["S", "M", "T", "W", "T", "F", "S"];
+  const MONTHS_LONG = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const fromIso = (s) => R.ymd(+s.slice(0, 4), +s.slice(5, 7), +s.slice(8, 10));
+  const day = (x) => (typeof x === "string" ? fromIso(x) : x);
+  const fmt = (x, withYear = true) => {
+    const d = day(x), p = R.parts(d);
+    return `${W3[R.dow(d)]} ${p.d} ${R.MONTHS[p.m - 1]}${withYear ? " " + p.y : ""}`;
+  };
+  const range = (a, b) => (R.parts(day(a)).y === R.parts(day(b)).y ? `${fmt(a, false)} \u2013 ${fmt(b)}` : `${fmt(a)} \u2013 ${fmt(b)}`);
+  const pad2 = (n) => String(n).padStart(2, "0");
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } },
+  };
+
+  const TODAY = R.londonToday();
+
+  // ---- tabs ----------------------------------------------------------------------------------------------
+  const VIEWS = ["today", "lookup", "calendar"];
+  function show(view) {
+    if (!VIEWS.includes(view)) view = "today";
+    for (const v of VIEWS) {
+      $("v-" + v).hidden = v !== view;
+      $("tab-" + v).setAttribute("aria-selected", String(v === view));
+    }
+    try { history.replaceState(null, "", "#" + view); } catch { /* sandboxed */ }
+    if (view === "calendar") renderCalendar();
+  }
+  document.querySelectorAll("nav button").forEach((b) => b.addEventListener("click", () => show(b.dataset.view)));
+
+  // ---- shared card renderers ----------------------------------------------------------------------------
+  function segs(n, filled, opts = {}) {
+    let h = '<div class="segs" aria-hidden="true">';
+    for (let i = 1; i <= n; i++) {
+      const gap = opts.groupBy && i > 1 && (i - 1) % opts.groupBy === 0 ? " gap" : "";
+      h += `<span class="${i <= filled ? "on" : ""}${gap}"></span>`;
+    }
+    h += "</div>";
+    if (opts.labels) h += `<div class="seglabels" aria-hidden="true">${opts.labels.map((l) => `<span>${l}</span>`).join("")}</div>`;
+    return h;
+  }
+
+  function dateCards(d) {
+    const rp = d.railway_period, pw = d.possession_week, pp = d.possession_period, tt = d.timetable;
+    const t = R.timetable(tt.year), blk = t.blocks.find((b) => b.block === tt.block);
+    const blkWeeks = Math.ceil((fromIso(d.date) - blk.start + 1) / 7);
+    const nextTT = R.timetableStart(tt.year + 1), nextMay = t.subsidiary.start;
+    const nextChange = tt.part === "Principal" ? [nextMay, `TT${tt.year} May timetable`] : [nextTT, `TT${tt.year + 1} December timetable`];
+    return `
+      <article class="card c-rail">
+        <div class="kind">Railway period</div>
+        <div class="big">P${pad2(rp.period)}<small>${esc(rp.year)}</small></div>
+        <div class="range">${range(rp.start, rp.end)}</div>
+        ${segs(rp.days, rp.day, { groupBy: 7 })}
+        <div class="sub">Day ${rp.day} of ${rp.days}</div>
+      </article>
+      <article class="card c-poss">
+        <div class="kind">Possession week</div>
+        <div class="big">Wk ${pad2(pw.week)}<small>P${pad2(pw.period)} week ${pw.week_in_period} \u00b7 ${esc(pw.year)}</small></div>
+        <div class="range">${range(pw.start, pw.end)}</div>
+        ${segs(7, pw.day, { labels: ["Sa", "Su", "Mo", "Tu", "We", "Th", "Fr"] })}
+        <dl class="kv"><dt>Possession period</dt><dd>P${pad2(pp.period)}: ${range(pp.start, pp.end)}</dd>
+        <dt>Weeks</dt><dd>${pp.first_week}\u2013${pp.last_week}${pp.weeks === 5 ? " (includes week 53)" : ""}</dd></dl>
+      </article>
+      <article class="card c-tt">
+        <div class="kind">Timetable</div>
+        <div class="big">Block ${tt.block}<small>${esc(tt.label)}</small></div>
+        <div class="range">${range(tt.block_start, tt.block_end)}</div>
+        ${segs(blk.weeks, blkWeeks)}
+        <dl class="kv"><dt>Timetable</dt><dd>${range(tt.start, tt.end)}</dd>
+        <dt>Next change</dt><dd>${fmt(nextChange[0])}, ${nextChange[1]}</dd></dl>
+      </article>`;
+  }
+
+  const jsonText = (o) => JSON.stringify(o, null, 2);
+
+  // ---- Today ---------------------------------------------------------------------------------------------
+  function renderToday(d) {
+    const info = R.describe(d), p = R.parts(d);
+    $("t-eyebrow").textContent = d === TODAY ? "Today in London" : d < TODAY ? "Looking back" : "Looking ahead";
+    $("t-date").textContent = `${R.DAYS[R.dow(d)]} ${p.d} ${MONTHS_LONG[p.m - 1]} ${p.y}`;
+    $("t-fy").textContent = `Financial year ${info.financial_year} \u00b7 ${info.control_period} year ${info.control_period_year}`;
+    $("t-cards").innerHTML = dateCards(info);
+    $("t-json-pre").textContent = jsonText(info);
+    $("t-pick").value = R.iso(d);
+    $("t-reset").hidden = d === TODAY;
+  }
+  $("t-pick").addEventListener("change", (e) => { if (e.target.value) renderToday(fromIso(e.target.value)); });
+  $("t-reset").addEventListener("click", () => renderToday(TODAY));
+
+  // ---- Look up -------------------------------------------------------------------------------------------
+  let lastLookup = null;
+
+  function calButton() { return '<div><button class="btn" data-showcal>Show in calendar</button></div>'; }
+
+  function renderLookup(res) {
+    lastLookup = res;
+    const r = res.result;
+    let h = "";
+    switch (res.type) {
+      case "error":
+        h = `<p class="error">${esc(res.error)}</p>`;
+        break;
+      case "date":
+        h = `<h2 style="font-size:22px">${R.DAYS[R.dow(fromIso(r.date))]} ${fmt(r.date).slice(4)}</h2><div class="cards">${dateCards(r)}</div>${calButton()}`;
+        break;
+      case "period": {
+        const rp = r.railway_period, pp = r.possession_period;
+        h = `<div class="cards">
+          <article class="card c-rail"><div class="kind">Railway period</div>
+            <div class="big">P${pad2(rp.period)}<small>${esc(rp.year)}</small></div>
+            <div class="range">${range(rp.start, rp.end)}</div><div class="sub">${rp.days} days, Sunday to Saturday</div></article>
+          <article class="card c-poss"><div class="kind">Possession period</div>
+            <div class="big">P${pad2(pp.period)}<small>${esc(pp.year)}</small></div>
+            <div class="range">${range(pp.start, pp.end)}</div><div class="sub">Weeks ${pp.first_week}\u2013${pp.last_week} (${pp.weeks} weeks), Saturday to Friday</div></article>
+        </div>${calButton()}`;
+        break;
+      }
+      case "possession_week": {
+        const fy = +r.year.slice(0, 4);
+        const rps = R.railwayPeriods(fy).map((p) => ({ ...p, fy })).concat(R.railwayPeriods(fy + 1).map((p) => ({ ...p, fy: fy + 1 })))
+          .filter((p) => p.start <= fromIso(r.end) && p.end >= fromIso(r.start));
+        const crossYear = rps.some((p) => p.fy !== rps[0].fy);
+        h = `<div class="cards"><article class="card c-poss"><div class="kind">Possession week</div>
+            <div class="big">Wk ${pad2(r.week)}<small>P${pad2(r.period)} week ${r.week_in_period} \u00b7 ${esc(r.year)}</small></div>
+            <div class="range">${range(r.start, r.end)}</div>
+            <dl class="kv"><dt>Railway period</dt><dd>${rps.map((p) => (crossYear ? R.fyLabel(p.fy) + " " : "") + `P${pad2(p.period)}`).join(" and ")}</dd></dl></article></div>${calButton()}`;
+        break;
+      }
+      case "timetable_year":
+        h = `<div class="cards"><article class="card c-tt"><div class="kind">Timetable year</div>
+            <div class="big">TT${r.timetable_year}<small>${r.weeks} weeks</small></div>
+            <div class="range">${range(r.start, r.end)}</div>
+            <dl class="kv"><dt>Principal (Dec)</dt><dd>${range(r.principal.start, r.principal.end)}, ${r.principal.weeks} wks</dd>
+            <dt>Subsidiary (May)</dt><dd>${range(r.subsidiary.start, r.subsidiary.end)}, ${r.subsidiary.weeks} wks</dd></dl>
+            <div class="scroll"><table class="plain"><thead><tr><th>Block</th><th>Starts</th><th>Ends</th><th>Weeks</th></tr></thead><tbody>
+            ${r.blocks.map((b) => `<tr><td>${b.block}</td><td>${fmt(b.start)}</td><td>${fmt(b.end)}</td><td>${b.weeks}</td></tr>`).join("")}
+            </tbody></table></div></article></div>${calButton()}`;
+        break;
+      case "timetable_part":
+      case "timetable_block":
+        h = `<div class="cards"><article class="card c-tt"><div class="kind">${res.type === "timetable_block" ? "Period block" : "Timetable"}</div>
+            <div class="big">${res.type === "timetable_block" ? "Block " + r.block : r.part}<small>TT${r.timetable_year}</small></div>
+            <div class="range">${range(r.start, r.end)}</div><div class="sub">${r.weeks} weeks</div></article></div>${calButton()}`;
+        break;
+      case "year": {
+        const py = r.possession_year;
+        h = `<div class="cards">
+          <article class="card c-rail"><div class="kind">Railway periods ${esc(r.financial_year)}</div>
+            <div class="scroll"><table class="plain"><thead><tr><th>Period</th><th>Starts</th><th>Ends</th><th>Days</th></tr></thead><tbody>
+            ${r.railway_periods.map((p) => `<tr><td>P${pad2(p.period)}</td><td>${fmt(p.start)}</td><td>${fmt(p.end)}</td><td>${p.days}</td></tr>`).join("")}
+            </tbody></table></div></article>
+          <article class="card c-poss"><div class="kind">Possession periods ${esc(py.year)}</div>
+            <div class="sub">${range(py.start, py.end)} \u00b7 ${py.weeks} weeks</div>
+            <div class="scroll"><table class="plain"><thead><tr><th>Period</th><th>Starts</th><th>Ends</th><th>Weeks</th></tr></thead><tbody>
+            ${py.periods.map((p) => `<tr><td>P${pad2(p.period)}</td><td>${fmt(p.start)}</td><td>${fmt(p.end)}</td><td>${p.first_week}\u2013${p.last_week}</td></tr>`).join("")}
+            </tbody></table></div></article></div>${calButton()}`;
+        break;
+      }
+    }
+    $("l-out").innerHTML = h;
+    $("l-json-pre").textContent = jsonText(res);
+  }
+
+  function runLookup(q) {
+    $("l-q").value = q;
+    renderLookup(R.lookup(q, TODAY));
+    store.set("rc-last-query", q);
+  }
+  $("l-form").addEventListener("submit", (e) => { e.preventDefault(); runLookup($("l-q").value); });
+  $("l-out").addEventListener("click", (e) => { if (e.target.closest("[data-showcal]") && lastLookup) { show("calendar"); showInCalendar(lastLookup); } });
+
+  // ---- Calendar ------------------------------------------------------------------------------------------
+  const cal = { kind: "poss", year: null, hl: null, scroll: false };
+  const calYearFor = (kind, d) => (kind === "tt" ? R.timetableYearOf(d) : kind === "poss" ? R.possessionYearOf(d) : R.financialYearOf(d));
+  try { const k = store.get("rc-cal-kind"); if (["poss", "rail", "tt"].includes(k)) cal.kind = k; } catch { /* ignore */ }
+  cal.year = calYearFor(cal.kind, TODAY);
+
+  function groupHTML(cls, title, metaText, start, end, rowStartDow, rowLabel) {
+    const first = start - ((R.dow(start) - rowStartDow + 7) % 7);
+    const labelled = !!rowLabel;
+    let h = `<section class="grp ${cls}"><header><h3>${title}</h3><span class="meta">${metaText}</span></header>`;
+    h += `<div class="row${labelled ? "" : " nolabel"}" aria-hidden="true">${labelled ? '<span class="dh">wk</span>' : ""}`;
+    for (let i = 0; i < 7; i++) h += `<span class="dh">${W1[(rowStartDow + i) % 7]}</span>`;
+    h += "</div>";
+    for (let r = first; r <= end; r += 7) {
+      h += `<div class="row${labelled ? "" : " nolabel"}">`;
+      if (labelled) h += `<span class="lab">${rowLabel(r)}</span>`;
+      for (let d = r; d < r + 7; d++) {
+        const p = R.parts(d), out = d < start || d > end, wd = R.dow(d);
+        const c = ["d"];
+        if (out) c.push("out");
+        else {
+          if (wd === 0 || wd === 6) c.push("we");
+          if (cal.hl && d >= cal.hl[0] && d <= cal.hl[1]) c.push("hl");
+          if (d === TODAY) c.push("today");
+        }
+        const mo = p.d === 1 ? `<span class="mo">${R.MONTHS[p.m - 1]}</span>` : "";
+        h += `<span class="${c.join(" ")}" title="${out ? "" : fmt(d)}">${mo}${p.d}</span>`;
+      }
+      h += "</div>";
+    }
+    return h + "</section>";
+  }
+
+  function renderCalendar() {
+    const k = cal.kind, y = cal.year;
+    document.querySelectorAll("[data-cal]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.cal === k)));
+    let groups = "", summary = "", legend = "";
+    if (k === "poss") {
+      const s = R.possessionYearStart(y), n = R.possessionYearWeeks(y), cp = R.controlPeriod(y);
+      $("c-year").textContent = R.fyLabel(y);
+      summary = `<h2>Possession year ${R.fyLabel(y)}</h2><span class="meta">${range(s, s + n * 7 - 1)} \u00b7 ${n} weeks \u00b7 ${cp.name} year ${cp.year}</span>`;
+      legend = "Rows run Saturday to Friday; the number on the left is the possession week.";
+      for (const p of R.possessionPeriods(y)) {
+        groups += groupHTML("c-poss", `P${pad2(p.period)}`, `${range(p.start, p.end)}<br>weeks ${p.first_week}\u2013${p.last_week}`, p.start, p.end, 6,
+          (r) => pad2((r - s) / 7 + 1));
+      }
+    } else if (k === "rail") {
+      const cp = R.controlPeriod(y);
+      $("c-year").textContent = R.fyLabel(y);
+      summary = `<h2>Railway periods ${R.fyLabel(y)}</h2><span class="meta">1 Apr ${y} \u2013 31 Mar ${y + 1} \u00b7 ${cp.name} year ${cp.year}</span>`;
+      legend = "Rows run Sunday to Saturday. P1 starts on 1 April and P13 ends on 31 March.";
+      for (const p of R.railwayPeriods(y)) {
+        groups += groupHTML("c-rail", `P${pad2(p.period)}`, `${range(p.start, p.end)}<br>${p.days} days`, p.start, p.end, 0, null);
+      }
+    } else {
+      const t = R.timetable(y);
+      $("c-year").textContent = `TT${y}`;
+      summary = `<h2>Timetable ${y}</h2><span class="meta">${range(t.start, t.end)} \u00b7 ${t.weeks} weeks \u00b7 Principal ${t.principal.weeks} wks, Subsidiary ${t.subsidiary.weeks} wks</span>`;
+      legend = "Rows run Monday to Sunday because blocks change on Mondays; only the December and May changes fall on a Sunday. The number on the left is the timetable week (Sunday to Saturday) that the Monday falls in.";
+      for (const b of t.blocks) {
+        const part = b.start < t.subsidiary.start ? "Principal" : "Subsidiary";
+        groups += groupHTML("c-tt", `Block ${b.block}`, `${range(b.start, b.end)}<br>${part} \u00b7 ${b.weeks} wks`, b.start, b.end, 1,
+          (r) => (r < t.start ? "" : pad2(Math.floor((r - t.start) / 7) + 1)));
+      }
+    }
+    $("c-summary").innerHTML = summary;
+    $("c-legend").innerHTML = `<span>${legend}</span><span><i class="sw" style="outline:2px solid var(--ink);outline-offset:-2px"></i>Today</span><span><i class="sw" style="background:var(--hl-bg)"></i>Found</span><span><i class="sw" style="background:var(--weekend)"></i>Weekend</span>`;
+    $("c-grid").innerHTML = groups;
+    if (cal.scroll) {
+      cal.scroll = false;
+      const el = $("c-grid").querySelector(".d.hl");
+      if (el) el.closest(".grp").scrollIntoView({ block: "center" });
+    }
+  }
+
+  function setKind(k) {
+    if (k === cal.kind) return;
+    // Keep looking at the same moment: the highlight if there is one, otherwise the middle of the shown year.
+    const anchor = cal.hl ? cal.hl[0] : cal.kind === "tt" ? R.timetableStart(cal.year) + 180 : R.ymd(cal.year, 10, 1);
+    cal.kind = k; cal.year = calYearFor(k, anchor); cal.scroll = !!cal.hl;
+    store.set("rc-cal-kind", k);
+    renderCalendar();
+  }
+  document.querySelectorAll("[data-cal]").forEach((b) => b.addEventListener("click", () => setKind(b.dataset.cal)));
+  $("c-prev").addEventListener("click", () => { cal.year--; renderCalendar(); });
+  $("c-next").addEventListener("click", () => { cal.year++; renderCalendar(); });
+  $("c-now").addEventListener("click", () => { cal.year = calYearFor(cal.kind, TODAY); cal.hl = [TODAY, TODAY]; cal.scroll = true; renderCalendar(); });
+
+  function showInCalendar(res) {
+    const r = res.result;
+    let kind = cal.kind, hl = null;
+    switch (res.type) {
+      case "date": hl = [fromIso(r.date), fromIso(r.date)]; break;
+      case "period":
+        if (kind === "tt") kind = "rail";
+        hl = kind === "poss" ? [fromIso(r.possession_period.start), fromIso(r.possession_period.end)] : [fromIso(r.railway_period.start), fromIso(r.railway_period.end)];
+        break;
+      case "possession_week": kind = "poss"; hl = [fromIso(r.start), fromIso(r.end)]; break;
+      case "timetable_year": kind = "tt"; cal.kind = kind; cal.year = r.timetable_year; cal.hl = null; return renderCalendar();
+      case "timetable_part": case "timetable_block": kind = "tt"; hl = [fromIso(r.start), fromIso(r.end)]; break;
+      case "year": cal.year = +r.financial_year.slice(0, 4); if (kind === "tt") kind = "rail"; cal.kind = kind; cal.hl = null; return renderCalendar();
+      default: return;
+    }
+    cal.kind = kind; cal.hl = hl; cal.scroll = true;
+    cal.year = kind === "tt" && res.result.timetable_year ? res.result.timetable_year : calYearFor(kind, hl[0]);
+    renderCalendar();
+  }
+
+  $("c-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const res = R.lookup($("c-q").value, TODAY);
+    $("c-err").hidden = res.type !== "error";
+    if (res.type === "error") { $("c-err").textContent = res.error; return; }
+    showInCalendar(res);
+  });
+
+  // ---- copy buttons --------------------------------------------------------------------------------------
+  document.addEventListener("click", async (e) => {
+    const b = e.target.closest("[data-copy]");
+    if (!b) return;
+    const pre = $(b.dataset.copy);
+    try { await navigator.clipboard.writeText(pre.textContent); b.textContent = "Copied"; }
+    catch {
+      const sel = getSelection(), rg = document.createRange();
+      rg.selectNodeContents(pre); sel.removeAllRanges(); sel.addRange(rg);
+      b.textContent = "Selected, press Ctrl+C";
+    }
+    setTimeout(() => { b.textContent = "Copy JSON"; }, 2000);
+  });
+
+  // ---- start ---------------------------------------------------------------------------------------------
+  renderToday(TODAY);
+  const now = R.describe(TODAY), nextP = (now.railway_period.period % 13) + 1;
+  const examples = [`P${nextP}`, `wk ${pad2(Math.min(now.possession_week.week + 4, 52))}`, "P13W5 2025/26", "25/12/2026", "TT2027 block C", "2027/28"];
+  $("l-chips").insertAdjacentHTML("beforeend", examples.map((x) => `<button class="chip" type="button">${esc(x)}</button>`).join(""));
+  $("l-chips").addEventListener("click", (e) => { const c = e.target.closest(".chip"); if (c) runLookup(c.textContent); });
+  runLookup(store.get("rc-last-query") || examples[0]);
+  cal.hl = [TODAY, TODAY];
+  show((location.hash || "#today").slice(1));
+})();
+</script>
+</body>
+</html>

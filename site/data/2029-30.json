@@ -1,0 +1,721 @@
+{
+ "financial_year": "2029/30",
+ "start": "2029-04-01",
+ "end": "2030-03-31",
+ "control_period": "FP1",
+ "control_period_year": 1,
+ "railway_periods": [
+  {
+   "year": "2029/30",
+   "period": 1,
+   "label": "2029/30 P01",
+   "start": "2029-04-01",
+   "end": "2029-04-28",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 2,
+   "label": "2029/30 P02",
+   "start": "2029-04-29",
+   "end": "2029-05-26",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 3,
+   "label": "2029/30 P03",
+   "start": "2029-05-27",
+   "end": "2029-06-23",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 4,
+   "label": "2029/30 P04",
+   "start": "2029-06-24",
+   "end": "2029-07-21",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 5,
+   "label": "2029/30 P05",
+   "start": "2029-07-22",
+   "end": "2029-08-18",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 6,
+   "label": "2029/30 P06",
+   "start": "2029-08-19",
+   "end": "2029-09-15",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 7,
+   "label": "2029/30 P07",
+   "start": "2029-09-16",
+   "end": "2029-10-13",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 8,
+   "label": "2029/30 P08",
+   "start": "2029-10-14",
+   "end": "2029-11-10",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 9,
+   "label": "2029/30 P09",
+   "start": "2029-11-11",
+   "end": "2029-12-08",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 10,
+   "label": "2029/30 P10",
+   "start": "2029-12-09",
+   "end": "2030-01-05",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 11,
+   "label": "2029/30 P11",
+   "start": "2030-01-06",
+   "end": "2030-02-02",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 12,
+   "label": "2029/30 P12",
+   "start": "2030-02-03",
+   "end": "2030-03-02",
+   "days": 28
+  },
+  {
+   "year": "2029/30",
+   "period": 13,
+   "label": "2029/30 P13",
+   "start": "2030-03-03",
+   "end": "2030-03-31",
+   "days": 29
+  }
+ ],
+ "possession_year": {
+  "year": "2029/30",
+  "start": "2029-03-31",
+  "end": "2030-03-29",
+  "weeks": 52,
+  "periods": [
+   {
+    "year": "2029/30",
+    "period": 1,
+    "label": "2029/30 P01",
+    "start": "2029-03-31",
+    "end": "2029-04-27",
+    "first_week": 1,
+    "last_week": 4,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 2,
+    "label": "2029/30 P02",
+    "start": "2029-04-28",
+    "end": "2029-05-25",
+    "first_week": 5,
+    "last_week": 8,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 3,
+    "label": "2029/30 P03",
+    "start": "2029-05-26",
+    "end": "2029-06-22",
+    "first_week": 9,
+    "last_week": 12,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 4,
+    "label": "2029/30 P04",
+    "start": "2029-06-23",
+    "end": "2029-07-20",
+    "first_week": 13,
+    "last_week": 16,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 5,
+    "label": "2029/30 P05",
+    "start": "2029-07-21",
+    "end": "2029-08-17",
+    "first_week": 17,
+    "last_week": 20,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 6,
+    "label": "2029/30 P06",
+    "start": "2029-08-18",
+    "end": "2029-09-14",
+    "first_week": 21,
+    "last_week": 24,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 7,
+    "label": "2029/30 P07",
+    "start": "2029-09-15",
+    "end": "2029-10-12",
+    "first_week": 25,
+    "last_week": 28,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 8,
+    "label": "2029/30 P08",
+    "start": "2029-10-13",
+    "end": "2029-11-09",
+    "first_week": 29,
+    "last_week": 32,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 9,
+    "label": "2029/30 P09",
+    "start": "2029-11-10",
+    "end": "2029-12-07",
+    "first_week": 33,
+    "last_week": 36,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 10,
+    "label": "2029/30 P10",
+    "start": "2029-12-08",
+    "end": "2030-01-04",
+    "first_week": 37,
+    "last_week": 40,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 11,
+    "label": "2029/30 P11",
+    "start": "2030-01-05",
+    "end": "2030-02-01",
+    "first_week": 41,
+    "last_week": 44,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 12,
+    "label": "2029/30 P12",
+    "start": "2030-02-02",
+    "end": "2030-03-01",
+    "first_week": 45,
+    "last_week": 48,
+    "weeks": 4
+   },
+   {
+    "year": "2029/30",
+    "period": 13,
+    "label": "2029/30 P13",
+    "start": "2030-03-02",
+    "end": "2030-03-29",
+    "first_week": 49,
+    "last_week": 52,
+    "weeks": 4
+   }
+  ],
+  "weeks_list": [
+   {
+    "year": "2029/30",
+    "week": 1,
+    "period": 1,
+    "week_in_period": 1,
+    "start": "2029-03-31",
+    "end": "2029-04-06",
+    "label": "2029/30 W01 (P01 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 2,
+    "period": 1,
+    "week_in_period": 2,
+    "start": "2029-04-07",
+    "end": "2029-04-13",
+    "label": "2029/30 W02 (P01 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 3,
+    "period": 1,
+    "week_in_period": 3,
+    "start": "2029-04-14",
+    "end": "2029-04-20",
+    "label": "2029/30 W03 (P01 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 4,
+    "period": 1,
+    "week_in_period": 4,
+    "start": "2029-04-21",
+    "end": "2029-04-27",
+    "label": "2029/30 W04 (P01 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 5,
+    "period": 2,
+    "week_in_period": 1,
+    "start": "2029-04-28",
+    "end": "2029-05-04",
+    "label": "2029/30 W05 (P02 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 6,
+    "period": 2,
+    "week_in_period": 2,
+    "start": "2029-05-05",
+    "end": "2029-05-11",
+    "label": "2029/30 W06 (P02 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 7,
+    "period": 2,
+    "week_in_period": 3,
+    "start": "2029-05-12",
+    "end": "2029-05-18",
+    "label": "2029/30 W07 (P02 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 8,
+    "period": 2,
+    "week_in_period": 4,
+    "start": "2029-05-19",
+    "end": "2029-05-25",
+    "label": "2029/30 W08 (P02 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 9,
+    "period": 3,
+    "week_in_period": 1,
+    "start": "2029-05-26",
+    "end": "2029-06-01",
+    "label": "2029/30 W09 (P03 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 10,
+    "period": 3,
+    "week_in_period": 2,
+    "start": "2029-06-02",
+    "end": "2029-06-08",
+    "label": "2029/30 W10 (P03 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 11,
+    "period": 3,
+    "week_in_period": 3,
+    "start": "2029-06-09",
+    "end": "2029-06-15",
+    "label": "2029/30 W11 (P03 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 12,
+    "period": 3,
+    "week_in_period": 4,
+    "start": "2029-06-16",
+    "end": "2029-06-22",
+    "label": "2029/30 W12 (P03 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 13,
+    "period": 4,
+    "week_in_period": 1,
+    "start": "2029-06-23",
+    "end": "2029-06-29",
+    "label": "2029/30 W13 (P04 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 14,
+    "period": 4,
+    "week_in_period": 2,
+    "start": "2029-06-30",
+    "end": "2029-07-06",
+    "label": "2029/30 W14 (P04 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 15,
+    "period": 4,
+    "week_in_period": 3,
+    "start": "2029-07-07",
+    "end": "2029-07-13",
+    "label": "2029/30 W15 (P04 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 16,
+    "period": 4,
+    "week_in_period": 4,
+    "start": "2029-07-14",
+    "end": "2029-07-20",
+    "label": "2029/30 W16 (P04 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 17,
+    "period": 5,
+    "week_in_period": 1,
+    "start": "2029-07-21",
+    "end": "2029-07-27",
+    "label": "2029/30 W17 (P05 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 18,
+    "period": 5,
+    "week_in_period": 2,
+    "start": "2029-07-28",
+    "end": "2029-08-03",
+    "label": "2029/30 W18 (P05 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 19,
+    "period": 5,
+    "week_in_period": 3,
+    "start": "2029-08-04",
+    "end": "2029-08-10",
+    "label": "2029/30 W19 (P05 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 20,
+    "period": 5,
+    "week_in_period": 4,
+    "start": "2029-08-11",
+    "end": "2029-08-17",
+    "label": "2029/30 W20 (P05 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 21,
+    "period": 6,
+    "week_in_period": 1,
+    "start": "2029-08-18",
+    "end": "2029-08-24",
+    "label": "2029/30 W21 (P06 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 22,
+    "period": 6,
+    "week_in_period": 2,
+    "start": "2029-08-25",
+    "end": "2029-08-31",
+    "label": "2029/30 W22 (P06 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 23,
+    "period": 6,
+    "week_in_period": 3,
+    "start": "2029-09-01",
+    "end": "2029-09-07",
+    "label": "2029/30 W23 (P06 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 24,
+    "period": 6,
+    "week_in_period": 4,
+    "start": "2029-09-08",
+    "end": "2029-09-14",
+    "label": "2029/30 W24 (P06 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 25,
+    "period": 7,
+    "week_in_period": 1,
+    "start": "2029-09-15",
+    "end": "2029-09-21",
+    "label": "2029/30 W25 (P07 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 26,
+    "period": 7,
+    "week_in_period": 2,
+    "start": "2029-09-22",
+    "end": "2029-09-28",
+    "label": "2029/30 W26 (P07 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 27,
+    "period": 7,
+    "week_in_period": 3,
+    "start": "2029-09-29",
+    "end": "2029-10-05",
+    "label": "2029/30 W27 (P07 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 28,
+    "period": 7,
+    "week_in_period": 4,
+    "start": "2029-10-06",
+    "end": "2029-10-12",
+    "label": "2029/30 W28 (P07 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 29,
+    "period": 8,
+    "week_in_period": 1,
+    "start": "2029-10-13",
+    "end": "2029-10-19",
+    "label": "2029/30 W29 (P08 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 30,
+    "period": 8,
+    "week_in_period": 2,
+    "start": "2029-10-20",
+    "end": "2029-10-26",
+    "label": "2029/30 W30 (P08 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 31,
+    "period": 8,
+    "week_in_period": 3,
+    "start": "2029-10-27",
+    "end": "2029-11-02",
+    "label": "2029/30 W31 (P08 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 32,
+    "period": 8,
+    "week_in_period": 4,
+    "start": "2029-11-03",
+    "end": "2029-11-09",
+    "label": "2029/30 W32 (P08 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 33,
+    "period": 9,
+    "week_in_period": 1,
+    "start": "2029-11-10",
+    "end": "2029-11-16",
+    "label": "2029/30 W33 (P09 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 34,
+    "period": 9,
+    "week_in_period": 2,
+    "start": "2029-11-17",
+    "end": "2029-11-23",
+    "label": "2029/30 W34 (P09 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 35,
+    "period": 9,
+    "week_in_period": 3,
+    "start": "2029-11-24",
+    "end": "2029-11-30",
+    "label": "2029/30 W35 (P09 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 36,
+    "period": 9,
+    "week_in_period": 4,
+    "start": "2029-12-01",
+    "end": "2029-12-07",
+    "label": "2029/30 W36 (P09 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 37,
+    "period": 10,
+    "week_in_period": 1,
+    "start": "2029-12-08",
+    "end": "2029-12-14",
+    "label": "2029/30 W37 (P10 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 38,
+    "period": 10,
+    "week_in_period": 2,
+    "start": "2029-12-15",
+    "end": "2029-12-21",
+    "label": "2029/30 W38 (P10 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 39,
+    "period": 10,
+    "week_in_period": 3,
+    "start": "2029-12-22",
+    "end": "2029-12-28",
+    "label": "2029/30 W39 (P10 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 40,
+    "period": 10,
+    "week_in_period": 4,
+    "start": "2029-12-29",
+    "end": "2030-01-04",
+    "label": "2029/30 W40 (P10 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 41,
+    "period": 11,
+    "week_in_period": 1,
+    "start": "2030-01-05",
+    "end": "2030-01-11",
+    "label": "2029/30 W41 (P11 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 42,
+    "period": 11,
+    "week_in_period": 2,
+    "start": "2030-01-12",
+    "end": "2030-01-18",
+    "label": "2029/30 W42 (P11 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 43,
+    "period": 11,
+    "week_in_period": 3,
+    "start": "2030-01-19",
+    "end": "2030-01-25",
+    "label": "2029/30 W43 (P11 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 44,
+    "period": 11,
+    "week_in_period": 4,
+    "start": "2030-01-26",
+    "end": "2030-02-01",
+    "label": "2029/30 W44 (P11 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 45,
+    "period": 12,
+    "week_in_period": 1,
+    "start": "2030-02-02",
+    "end": "2030-02-08",
+    "label": "2029/30 W45 (P12 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 46,
+    "period": 12,
+    "week_in_period": 2,
+    "start": "2030-02-09",
+    "end": "2030-02-15",
+    "label": "2029/30 W46 (P12 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 47,
+    "period": 12,
+    "week_in_period": 3,
+    "start": "2030-02-16",
+    "end": "2030-02-22",
+    "label": "2029/30 W47 (P12 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 48,
+    "period": 12,
+    "week_in_period": 4,
+    "start": "2030-02-23",
+    "end": "2030-03-01",
+    "label": "2029/30 W48 (P12 wk 4)"
+   },
+   {
+    "year": "2029/30",
+    "week": 49,
+    "period": 13,
+    "week_in_period": 1,
+    "start": "2030-03-02",
+    "end": "2030-03-08",
+    "label": "2029/30 W49 (P13 wk 1)"
+   },
+   {
+    "year": "2029/30",
+    "week": 50,
+    "period": 13,
+    "week_in_period": 2,
+    "start": "2030-03-09",
+    "end": "2030-03-15",
+    "label": "2029/30 W50 (P13 wk 2)"
+   },
+   {
+    "year": "2029/30",
+    "week": 51,
+    "period": 13,
+    "week_in_period": 3,
+    "start": "2030-03-16",
+    "end": "2030-03-22",
+    "label": "2029/30 W51 (P13 wk 3)"
+   },
+   {
+    "year": "2029/30",
+    "week": 52,
+    "period": 13,
+    "week_in_period": 4,
+    "start": "2030-03-23",
+    "end": "2030-03-29",
+    "label": "2029/30 W52 (P13 wk 4)"
+   }
+  ]
+ }
+}

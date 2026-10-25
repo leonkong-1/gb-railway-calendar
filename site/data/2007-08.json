@@ -1,0 +1,721 @@
+{
+ "financial_year": "2007/08",
+ "start": "2007-04-01",
+ "end": "2008-03-31",
+ "control_period": "CP3",
+ "control_period_year": 4,
+ "railway_periods": [
+  {
+   "year": "2007/08",
+   "period": 1,
+   "label": "2007/08 P01",
+   "start": "2007-04-01",
+   "end": "2007-04-28",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 2,
+   "label": "2007/08 P02",
+   "start": "2007-04-29",
+   "end": "2007-05-26",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 3,
+   "label": "2007/08 P03",
+   "start": "2007-05-27",
+   "end": "2007-06-23",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 4,
+   "label": "2007/08 P04",
+   "start": "2007-06-24",
+   "end": "2007-07-21",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 5,
+   "label": "2007/08 P05",
+   "start": "2007-07-22",
+   "end": "2007-08-18",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 6,
+   "label": "2007/08 P06",
+   "start": "2007-08-19",
+   "end": "2007-09-15",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 7,
+   "label": "2007/08 P07",
+   "start": "2007-09-16",
+   "end": "2007-10-13",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 8,
+   "label": "2007/08 P08",
+   "start": "2007-10-14",
+   "end": "2007-11-10",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 9,
+   "label": "2007/08 P09",
+   "start": "2007-11-11",
+   "end": "2007-12-08",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 10,
+   "label": "2007/08 P10",
+   "start": "2007-12-09",
+   "end": "2008-01-05",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 11,
+   "label": "2007/08 P11",
+   "start": "2008-01-06",
+   "end": "2008-02-02",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 12,
+   "label": "2007/08 P12",
+   "start": "2008-02-03",
+   "end": "2008-03-01",
+   "days": 28
+  },
+  {
+   "year": "2007/08",
+   "period": 13,
+   "label": "2007/08 P13",
+   "start": "2008-03-02",
+   "end": "2008-03-31",
+   "days": 30
+  }
+ ],
+ "possession_year": {
+  "year": "2007/08",
+  "start": "2007-03-31",
+  "end": "2008-03-28",
+  "weeks": 52,
+  "periods": [
+   {
+    "year": "2007/08",
+    "period": 1,
+    "label": "2007/08 P01",
+    "start": "2007-03-31",
+    "end": "2007-04-27",
+    "first_week": 1,
+    "last_week": 4,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 2,
+    "label": "2007/08 P02",
+    "start": "2007-04-28",
+    "end": "2007-05-25",
+    "first_week": 5,
+    "last_week": 8,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 3,
+    "label": "2007/08 P03",
+    "start": "2007-05-26",
+    "end": "2007-06-22",
+    "first_week": 9,
+    "last_week": 12,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 4,
+    "label": "2007/08 P04",
+    "start": "2007-06-23",
+    "end": "2007-07-20",
+    "first_week": 13,
+    "last_week": 16,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 5,
+    "label": "2007/08 P05",
+    "start": "2007-07-21",
+    "end": "2007-08-17",
+    "first_week": 17,
+    "last_week": 20,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 6,
+    "label": "2007/08 P06",
+    "start": "2007-08-18",
+    "end": "2007-09-14",
+    "first_week": 21,
+    "last_week": 24,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 7,
+    "label": "2007/08 P07",
+    "start": "2007-09-15",
+    "end": "2007-10-12",
+    "first_week": 25,
+    "last_week": 28,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 8,
+    "label": "2007/08 P08",
+    "start": "2007-10-13",
+    "end": "2007-11-09",
+    "first_week": 29,
+    "last_week": 32,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 9,
+    "label": "2007/08 P09",
+    "start": "2007-11-10",
+    "end": "2007-12-07",
+    "first_week": 33,
+    "last_week": 36,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 10,
+    "label": "2007/08 P10",
+    "start": "2007-12-08",
+    "end": "2008-01-04",
+    "first_week": 37,
+    "last_week": 40,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 11,
+    "label": "2007/08 P11",
+    "start": "2008-01-05",
+    "end": "2008-02-01",
+    "first_week": 41,
+    "last_week": 44,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 12,
+    "label": "2007/08 P12",
+    "start": "2008-02-02",
+    "end": "2008-02-29",
+    "first_week": 45,
+    "last_week": 48,
+    "weeks": 4
+   },
+   {
+    "year": "2007/08",
+    "period": 13,
+    "label": "2007/08 P13",
+    "start": "2008-03-01",
+    "end": "2008-03-28",
+    "first_week": 49,
+    "last_week": 52,
+    "weeks": 4
+   }
+  ],
+  "weeks_list": [
+   {
+    "year": "2007/08",
+    "week": 1,
+    "period": 1,
+    "week_in_period": 1,
+    "start": "2007-03-31",
+    "end": "2007-04-06",
+    "label": "2007/08 W01 (P01 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 2,
+    "period": 1,
+    "week_in_period": 2,
+    "start": "2007-04-07",
+    "end": "2007-04-13",
+    "label": "2007/08 W02 (P01 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 3,
+    "period": 1,
+    "week_in_period": 3,
+    "start": "2007-04-14",
+    "end": "2007-04-20",
+    "label": "2007/08 W03 (P01 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 4,
+    "period": 1,
+    "week_in_period": 4,
+    "start": "2007-04-21",
+    "end": "2007-04-27",
+    "label": "2007/08 W04 (P01 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 5,
+    "period": 2,
+    "week_in_period": 1,
+    "start": "2007-04-28",
+    "end": "2007-05-04",
+    "label": "2007/08 W05 (P02 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 6,
+    "period": 2,
+    "week_in_period": 2,
+    "start": "2007-05-05",
+    "end": "2007-05-11",
+    "label": "2007/08 W06 (P02 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 7,
+    "period": 2,
+    "week_in_period": 3,
+    "start": "2007-05-12",
+    "end": "2007-05-18",
+    "label": "2007/08 W07 (P02 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 8,
+    "period": 2,
+    "week_in_period": 4,
+    "start": "2007-05-19",
+    "end": "2007-05-25",
+    "label": "2007/08 W08 (P02 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 9,
+    "period": 3,
+    "week_in_period": 1,
+    "start": "2007-05-26",
+    "end": "2007-06-01",
+    "label": "2007/08 W09 (P03 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 10,
+    "period": 3,
+    "week_in_period": 2,
+    "start": "2007-06-02",
+    "end": "2007-06-08",
+    "label": "2007/08 W10 (P03 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 11,
+    "period": 3,
+    "week_in_period": 3,
+    "start": "2007-06-09",
+    "end": "2007-06-15",
+    "label": "2007/08 W11 (P03 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 12,
+    "period": 3,
+    "week_in_period": 4,
+    "start": "2007-06-16",
+    "end": "2007-06-22",
+    "label": "2007/08 W12 (P03 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 13,
+    "period": 4,
+    "week_in_period": 1,
+    "start": "2007-06-23",
+    "end": "2007-06-29",
+    "label": "2007/08 W13 (P04 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 14,
+    "period": 4,
+    "week_in_period": 2,
+    "start": "2007-06-30",
+    "end": "2007-07-06",
+    "label": "2007/08 W14 (P04 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 15,
+    "period": 4,
+    "week_in_period": 3,
+    "start": "2007-07-07",
+    "end": "2007-07-13",
+    "label": "2007/08 W15 (P04 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 16,
+    "period": 4,
+    "week_in_period": 4,
+    "start": "2007-07-14",
+    "end": "2007-07-20",
+    "label": "2007/08 W16 (P04 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 17,
+    "period": 5,
+    "week_in_period": 1,
+    "start": "2007-07-21",
+    "end": "2007-07-27",
+    "label": "2007/08 W17 (P05 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 18,
+    "period": 5,
+    "week_in_period": 2,
+    "start": "2007-07-28",
+    "end": "2007-08-03",
+    "label": "2007/08 W18 (P05 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 19,
+    "period": 5,
+    "week_in_period": 3,
+    "start": "2007-08-04",
+    "end": "2007-08-10",
+    "label": "2007/08 W19 (P05 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 20,
+    "period": 5,
+    "week_in_period": 4,
+    "start": "2007-08-11",
+    "end": "2007-08-17",
+    "label": "2007/08 W20 (P05 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 21,
+    "period": 6,
+    "week_in_period": 1,
+    "start": "2007-08-18",
+    "end": "2007-08-24",
+    "label": "2007/08 W21 (P06 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 22,
+    "period": 6,
+    "week_in_period": 2,
+    "start": "2007-08-25",
+    "end": "2007-08-31",
+    "label": "2007/08 W22 (P06 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 23,
+    "period": 6,
+    "week_in_period": 3,
+    "start": "2007-09-01",
+    "end": "2007-09-07",
+    "label": "2007/08 W23 (P06 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 24,
+    "period": 6,
+    "week_in_period": 4,
+    "start": "2007-09-08",
+    "end": "2007-09-14",
+    "label": "2007/08 W24 (P06 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 25,
+    "period": 7,
+    "week_in_period": 1,
+    "start": "2007-09-15",
+    "end": "2007-09-21",
+    "label": "2007/08 W25 (P07 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 26,
+    "period": 7,
+    "week_in_period": 2,
+    "start": "2007-09-22",
+    "end": "2007-09-28",
+    "label": "2007/08 W26 (P07 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 27,
+    "period": 7,
+    "week_in_period": 3,
+    "start": "2007-09-29",
+    "end": "2007-10-05",
+    "label": "2007/08 W27 (P07 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 28,
+    "period": 7,
+    "week_in_period": 4,
+    "start": "2007-10-06",
+    "end": "2007-10-12",
+    "label": "2007/08 W28 (P07 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 29,
+    "period": 8,
+    "week_in_period": 1,
+    "start": "2007-10-13",
+    "end": "2007-10-19",
+    "label": "2007/08 W29 (P08 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 30,
+    "period": 8,
+    "week_in_period": 2,
+    "start": "2007-10-20",
+    "end": "2007-10-26",
+    "label": "2007/08 W30 (P08 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 31,
+    "period": 8,
+    "week_in_period": 3,
+    "start": "2007-10-27",
+    "end": "2007-11-02",
+    "label": "2007/08 W31 (P08 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 32,
+    "period": 8,
+    "week_in_period": 4,
+    "start": "2007-11-03",
+    "end": "2007-11-09",
+    "label": "2007/08 W32 (P08 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 33,
+    "period": 9,
+    "week_in_period": 1,
+    "start": "2007-11-10",
+    "end": "2007-11-16",
+    "label": "2007/08 W33 (P09 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 34,
+    "period": 9,
+    "week_in_period": 2,
+    "start": "2007-11-17",
+    "end": "2007-11-23",
+    "label": "2007/08 W34 (P09 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 35,
+    "period": 9,
+    "week_in_period": 3,
+    "start": "2007-11-24",
+    "end": "2007-11-30",
+    "label": "2007/08 W35 (P09 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 36,
+    "period": 9,
+    "week_in_period": 4,
+    "start": "2007-12-01",
+    "end": "2007-12-07",
+    "label": "2007/08 W36 (P09 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 37,
+    "period": 10,
+    "week_in_period": 1,
+    "start": "2007-12-08",
+    "end": "2007-12-14",
+    "label": "2007/08 W37 (P10 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 38,
+    "period": 10,
+    "week_in_period": 2,
+    "start": "2007-12-15",
+    "end": "2007-12-21",
+    "label": "2007/08 W38 (P10 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 39,
+    "period": 10,
+    "week_in_period": 3,
+    "start": "2007-12-22",
+    "end": "2007-12-28",
+    "label": "2007/08 W39 (P10 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 40,
+    "period": 10,
+    "week_in_period": 4,
+    "start": "2007-12-29",
+    "end": "2008-01-04",
+    "label": "2007/08 W40 (P10 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 41,
+    "period": 11,
+    "week_in_period": 1,
+    "start": "2008-01-05",
+    "end": "2008-01-11",
+    "label": "2007/08 W41 (P11 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 42,
+    "period": 11,
+    "week_in_period": 2,
+    "start": "2008-01-12",
+    "end": "2008-01-18",
+    "label": "2007/08 W42 (P11 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 43,
+    "period": 11,
+    "week_in_period": 3,
+    "start": "2008-01-19",
+    "end": "2008-01-25",
+    "label": "2007/08 W43 (P11 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 44,
+    "period": 11,
+    "week_in_period": 4,
+    "start": "2008-01-26",
+    "end": "2008-02-01",
+    "label": "2007/08 W44 (P11 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 45,
+    "period": 12,
+    "week_in_period": 1,
+    "start": "2008-02-02",
+    "end": "2008-02-08",
+    "label": "2007/08 W45 (P12 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 46,
+    "period": 12,
+    "week_in_period": 2,
+    "start": "2008-02-09",
+    "end": "2008-02-15",
+    "label": "2007/08 W46 (P12 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 47,
+    "period": 12,
+    "week_in_period": 3,
+    "start": "2008-02-16",
+    "end": "2008-02-22",
+    "label": "2007/08 W47 (P12 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 48,
+    "period": 12,
+    "week_in_period": 4,
+    "start": "2008-02-23",
+    "end": "2008-02-29",
+    "label": "2007/08 W48 (P12 wk 4)"
+   },
+   {
+    "year": "2007/08",
+    "week": 49,
+    "period": 13,
+    "week_in_period": 1,
+    "start": "2008-03-01",
+    "end": "2008-03-07",
+    "label": "2007/08 W49 (P13 wk 1)"
+   },
+   {
+    "year": "2007/08",
+    "week": 50,
+    "period": 13,
+    "week_in_period": 2,
+    "start": "2008-03-08",
+    "end": "2008-03-14",
+    "label": "2007/08 W50 (P13 wk 2)"
+   },
+   {
+    "year": "2007/08",
+    "week": 51,
+    "period": 13,
+    "week_in_period": 3,
+    "start": "2008-03-15",
+    "end": "2008-03-21",
+    "label": "2007/08 W51 (P13 wk 3)"
+   },
+   {
+    "year": "2007/08",
+    "week": 52,
+    "period": 13,
+    "week_in_period": 4,
+    "start": "2008-03-22",
+    "end": "2008-03-28",
+    "label": "2007/08 W52 (P13 wk 4)"
+   }
+  ]
+ }
+}
